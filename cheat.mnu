@@ -1,0 +1,1803 @@
+// SKPP Test Build Menu
+// Inspired by Freebies Menu by NobleKangaroo
+//
+// Changelog:
+// - 0.1
+//		Added:
+//			Melee IO Sets, PBAoE IO Sets, Ranged IO Sets, Sniper IO Sets, Targeted AoE IO Sets
+//			Universal Damage IO Set, Blaster IO Sets, Brute IO Sets, Controller IO Sets
+//
+// - 0.2
+//		Added:
+//			Curropter IO Sets, Defender IO Sets, Dominator IO Sets, Kheldian IO Sets, Mastermind IO Sets
+//			Scrapper IO Sets, Soldiers of Arachnos IO Sets, Stalker IO Sets, Tank IO Sets
+//			Defence IO Sets, Resist IO Sets, Pets IO Sets, Healing IO Sets, Debuff IO Sets, Control IO Sets
+//
+// - 0.3
+//		Added:
+//			Flight IO Sets, Leaping IO Sets, Running IO Sets, Teleport IO Sets, Universal Travel IO Sets
+//			Endurance Modification IO Sets, Taunt IO Sets, To Hit Buff IO Sets
+//
+// - 0.4
+//		Added:
+//			Basic IOs
+//			Hamidon Origins
+//			Grant Oroboro Portal
+//			Sudden Acceleration IO Set
+//
+// TODO:
+//			Add Hydra and Titan Enh
+//
+Menu "Cheats"
+{
+    Divider
+    Title "Levels & Influence"
+    Menu "Set Level"
+    {
+        Divider
+        Option "Level 50" "levelup_xp 50"
+        Option "Level 40" "levelup_xp 40"
+        Option "Level 30" "levelup_xp 30"
+        Option "Level 20" "levelup_xp 20"
+        Option "Level 10" "levelup_xp 10"
+    }
+    Menu "Add Influence"
+    {
+        Divider
+        Option "1,000,000,000" "influence_add 1000000000"
+        Option "1,000,000" "influence_add 1000000"
+        Option "1,000" "influence_add 1000"
+    }
+	
+	Divider
+	Title "Enhancements"
+	Menu "IO Sets"
+	{
+		Menu "Archetype Sets"
+		{
+			Menu "Blaster"
+			{
+				Menu "Blaster's Wrath (50)"
+				{
+					Option "1x Set" "boostset Blasters_Wrath 50"
+					Option "3x Set" "boostset Blasters_Wrath 50$$boostset Blasters_Wrath 50$$boostset Blasters_Wrath 50"
+					Option "5x Set" "boostset Blasters_Wrath 50$$boostset Blasters_Wrath 50$$boostset Blasters_Wrath 50$$boostset Blasters_Wrath 50$$boostset Blasters_Wrath 50"
+					Option "Rech/Chance for Fire Damage" "boost Crafted_Blasters_Wrath_F Crafted_Blasters_Wrath_F 50"
+				}
+				Menu "Superior Blaster's Wrath (50)"
+				{
+					Option "1x Set" "boostset Superior_Blasters_Wrath 50"
+					Option "3x Set" "boostset Superior_Blasters_Wrath 50$$boostset Superior_Blasters_Wrath 50$$boostset Superior_Blasters_Wrath 50"
+					Option "5x Set" "boostset Superior_Blasters_Wrath 50$$boostset Superior_Blasters_Wrath 50$$boostset Superior_Blasters_Wrath 50$$boostset Superior_Blasters_Wrath 50$$boostset Superior_Blasters_Wrath 50"
+					Option "Rech/Chance for Fire Damage" "boost Crafted_Superior_Blasters_Wrath_F Crafted_Superior_Blasters_Wrath_F 50"
+				}
+				Menu "Defiant Barrage (50)"
+				{
+					Option "1x Set" "boostset Defiant_Barrage 50"
+					Option "3x Set" "boostset Defiant_Barrage 50$$boostset Defiant_Barrage 50$$boostset Defiant_Barrage 50"
+					Option "5x Set" "boostset Defiant_Barrage 50$$boostset Defiant_Barrage 50$$boostset Defiant_Barrage 50$$boostset Defiant_Barrage 50$$boostset Defiant_Barrage 50"
+					Option "Rech/Chance for +Status Protection" "boost Crafted_Defiant_Barrage_F Crafted_Defiant_Barrage_F 50"
+				}
+				Menu "Superior Defiant Barrage (50)"
+				{
+					Option "1x Set" "boostset Superior_Defiant_Barrage 50"
+					Option "3x Set" "boostset Superior_Defiant_Barrage 50$$boostset Superior_Defiant_Barrage 50$$boostset Superior_Defiant_Barrage 50"
+					Option "5x Set" "boostset Superior_Defiant_Barrage 50$$boostset Superior_Defiant_Barrage 50$$boostset Superior_Defiant_Barrage 50$$boostset Superior_Defiant_Barrage 50$$boostset Superior_Defiant_Barrage 50"
+					Option "Rech/Chance for +Status Protection" "boost Crafted_Superior_Defiant_Barrage_F Crafted_Superior_Defiant_Barrage_F 50"
+				}
+			}
+			Menu "Brute"
+			{
+				Menu "Brute's Fury (50)"
+				{
+					Option "1x Set" "boostset Brutes_Fury 50"
+					Option "3x Set" "boostset Brutes_Fury 50$$boostset Brutes_Fury 50$$boostset Brutes_Fury 50"
+					Option "5x Set" "boostset Brutes_Fury 50$$boostset Brutes_Fury 50$$boostset Brutes_Fury 50$$boostset Brutes_Fury 50$$boostset Brutes_Fury 50"
+					Option "Rech/Fury Bonus" "boost Crafted_Brutes_Fury_F Crafted_Brutes_Fury_F 50"
+				}
+				Menu "Superior Brute's Fury (50)"
+				{
+					Option "1x Set" "boostset Superior_Brutes_Fury 50"
+					Option "3x Set" "boostset Superior_Brutes_Fury 50$$boostset Superior_Brutes_Fury 50$$boostset Superior_Brutes_Fury 50"
+					Option "5x Set" "boostset Superior_Brutes_Fury 50$$boostset Superior_Brutes_Fury 50$$boostset Superior_Brutes_Fury 50$$boostset Superior_Brutes_Fury 50$$boostset Superior_Brutes_Fury 50"
+					Option "Rech/Fury Bonus" "boost Crafted_Superior_Brutes_Fury_F Crafted_Superior_Brutes_Fury_F 50"
+				}
+				Menu "Unrelenting Fury (50)"
+				{
+					Option "1x Set" "boostset Unrelenting_Fury 50"
+					Option "3x Set" "boostset Unrelenting_Fury 50$$boostset Unrelenting_Fury 50$$boostset Unrelenting_Fury 50"
+					Option "5x Set" "boostset Unrelenting_Fury 50$$boostset Unrelenting_Fury 50$$boostset Unrelenting_Fury 50$$boostset Unrelenting_Fury 50$$boostset Unrelenting_Fury 50"
+					Option "Rech/Chance for +Regen/+End Discount" "boost Crafted_Unrelenting_Fury_F Crafted_Unrelenting_Fury_F 50"
+				}
+				Menu "Superior Unrelenting Fury (50)"
+				{
+					Option "1x Set" "boostset Superior_Unrelenting_Fury 50"
+					Option "3x Set" "boostset Superior_Unrelenting_Fury 50$$boostset Superior_Unrelenting_Fury 50$$boostset Superior_Unrelenting_Fury 50"
+					Option "5x Set" "boostset Superior_Unrelenting_Fury 50$$boostset Superior_Unrelenting_Fury 50$$boostset Superior_Unrelenting_Fury 50$$boostset Superior_Unrelenting_Fury 50$$boostset Superior_Unrelenting_Fury 50"
+					Option "Rech/Chance for +Regen/+End Discount" "boost Crafted_Superior_Unrelenting_Fury_F Crafted_Superior_Unrelenting_Fury_F 50"
+				}
+			}
+			Menu "Controller"
+			{
+				Menu "Will of the Controller (50)"
+				{
+					Option "1x Set" "boostset Will_of_the_Controller 50"
+					Option "3x Set" "boostset Will_of_the_Controller 50$$boostset Will_of_the_Controller 50$$boostset Will_of_the_Controller 50"
+					Option "5x Set" "boostset Will_of_the_Controller 50$$boostset Will_of_the_Controller 50$$boostset Will_of_the_Controller 50$$boostset Will_of_the_Controller 50$$boostset Will_of_the_Controller 50"
+					Option "Rech/Chance for Psionic Damage" "boost Crafted_Will_of_the_Controller_F Crafted_Will_of_the_Controller_F 50"
+				}
+				Menu "Superior Will of the Controller (50)"
+				{
+					Option "1x Set" "boostset Superior_Will_of_the_Controller 50"
+					Option "3x Set" "boostset Superior_Will_of_the_Controller 50$$boostset Superior_Will_of_the_Controller 50$$boostset Superior_Will_of_the_Controller 50"
+					Option "5x Set" "boostset Superior_Will_of_the_Controller 50$$boostset Superior_Will_of_the_Controller 50$$boostset Superior_Will_of_the_Controller 50$$boostset Superior_Will_of_the_Controller 50$$boostset Superior_Will_of_the_Controller 50"
+					Option "Rech/Chance for Psionic Damage" "boost Crafted_Superior_Will_of_the_Controller_F Crafted_Superior_Will_of_the_Controller_F 50"
+				}
+				Menu "Overpowering Presence (50)"
+				{
+					Option "1x Set" "boostset Overpowering_Presence 50"
+					Option "3x Set" "boostset Overpowering_Presence 50$$boostset Overpowering_Presence 50$$boostset Overpowering_Presence 50"
+					Option "5x Set" "boostset Overpowering_Presence 50$$boostset Overpowering_Presence 50$$boostset Overpowering_Presence 50$$boostset Overpowering_Presence 50$$boostset Overpowering_Presence 50"
+					Option "Rech/Chance for Energy Font" "boost Crafted_Overpowering_Presence_F Crafted_Overpowering_Presence_F 50"
+				}
+				Menu "Superior Overpowering Presence (50)"
+				{
+					Option "1x Set" "boostset Superior_Overpowering_Presence 50"
+					Option "3x Set" "boostset Superior_Overpowering_Presence 50$$boostset Superior_Overpowering_Presence 50$$boostset Superior_Overpowering_Presence 50"
+					Option "5x Set" "boostset Superior_Overpowering_Presence 50$$boostset Superior_Overpowering_Presence 50$$boostset Superior_Overpowering_Presence 50$$boostset Superior_Overpowering_Presence 50$$boostset Superior_Overpowering_Presence 50"
+					Option "Rech/Chance for Energy Font" "boost Crafted_Superior_Overpowering_Presence_F Crafted_Superior_Overpowering_Presence_F 50"
+				}
+			}
+			Menu "Corruptor"
+			{
+				Menu "Malice of the Corruptor (50)"
+				{
+					Option "1x Set" "boostset Malice_of_the_Corruptor 50"
+					Option "3x Set" "boostset Malice_of_the_Corruptor 50$$boostset Malice_of_the_Corruptor 50$$boostset Malice_of_the_Corruptor 50"
+					Option "5x Set" "boostset Malice_of_the_Corruptor 50$$boostset Malice_of_the_Corruptor 50$$boostset Malice_of_the_Corruptor 50$$boostset Malice_of_the_Corruptor 50$$boostset Malice_of_the_Corruptor 50"
+					Option "Rech/Chance for Negative Energy Damage" "boost Crafted_Malice_of_the_Corruptor_F Crafted_Malice_of_the_Corruptor_F 50"
+				}
+				Menu "Superior Malice of the Corruptor (50)"
+				{
+					Option "1x Set" "boostset Superior_Malice_of_the_Corruptor 50"
+					Option "3x Set" "boostset Superior_Malice_of_the_Corruptor 50$$boostset Superior_Malice_of_the_Corruptor 50$$boostset Superior_Malice_of_the_Corruptor 50"
+					Option "5x Set" "boostset Superior_Malice_of_the_Corruptor 50$$boostset Superior_Malice_of_the_Corruptor 50$$boostset Superior_Malice_of_the_Corruptor 50$$boostset Superior_Malice_of_the_Corruptor 50$$boostset Superior_Malice_of_the_Corruptor 50"
+					Option "Rech/Chance for Negative Energy Damage" "boost Crafted_Superior_Malice_of_the_Corruptor_F Crafted_Superior_Malice_of_the_Corruptor_F 50"
+				}
+				Menu "Scourging Blast (50)"
+				{
+					Option "1x Set" "boostset Scourging_Blast 50"
+					Option "3x Set" "boostset Scourging_Blast 50$$boostset Scourging_Blast 50$$boostset Scourging_Blast 50"
+					Option "5x Set" "boostset Scourging_Blast 50$$boostset Scourging_Blast 50$$boostset Scourging_Blast 50$$boostset Scourging_Blast 50$$boostset Scourging_Blast 50"
+					Option "Rech/Chance for Minor PBAoE +End, +Health" "boost Crafted_Scourging_Blast_F Crafted_Scourging_Blast_F 50"
+				}
+				Menu "Superior Scourging Blast (50)"
+				{
+					Option "1x Set" "boostset Superior_Scourging_Blast 50"
+					Option "3x Set" "boostset Superior_Scourging_Blast 50$$boostset Superior_Scourging_Blast 50$$boostset Superior_Scourging_Blast 50"
+					Option "5x Set" "boostset Superior_Scourging_Blast 50$$boostset Superior_Scourging_Blast 50$$boostset Superior_Scourging_Blast 50$$boostset Superior_Scourging_Blast 50$$boostset Superior_Scourging_Blast 50"
+					Option "Rech/Chance for Minor PBAoE +End, +Health" "boost Crafted_Superior_Scourging_Blast_F Crafted_Superior_Scourging_Blast_F 50"
+				}
+			}
+			Menu "Defender"
+			{
+				Menu "Defender's Bastion (50)"
+				{
+					Option "1x Set" "boostset Defenders_Bastion 50"
+					Option "3x Set" "boostset Defenders_Bastion 50$$boostset Defenders_Bastion 50$$boostset Defenders_Bastion 50"
+					Option "5x Set" "boostset Defenders_Bastion 50$$boostset Defenders_Bastion 50$$boostset Defenders_Bastion 50$$boostset Defenders_Bastion 50$$boostset Defenders_Bastion 50"
+					Option "Rech/Chance for Minor PBAoE Heal" "boost Crafted_Defenders_Bastion_F Crafted_Defenders_Bastion_F 50"
+				}
+				Menu "Superior Defender's Bastion (50)"
+				{
+					Option "1x Set" "boostset Superior_Defenders_Bastion 50"
+					Option "3x Set" "boostset Superior_Defenders_Bastion 50$$boostset Superior_Defenders_Bastion 50$$boostset Superior_Defenders_Bastion 50"
+					Option "5x Set" "boostset Superior_Defenders_Bastion 50$$boostset Superior_Defenders_Bastion 50$$boostset Superior_Defenders_Bastion 50$$boostset Superior_Defenders_Bastion 50$$boostset Superior_Defenders_Bastion 50"
+					Option "Rech/Chance for Minor PBAoE Heal" "boost Crafted_Superior_Defenders_Bastion_F Crafted_Superior_Defenders_Bastion_F 50"
+				}
+				Menu "Vigilant Assault (50)"
+				{
+					Option "1x Set" "boostset Vigilant_Assault 50"
+					Option "3x Set" "boostset Vigilant_Assault 50$$boostset Vigilant_Assault 50$$boostset Vigilant_Assault 50"
+					Option "5x Set" "boostset Vigilant_Assault 50$$boostset Vigilant_Assault 50$$boostset Vigilant_Assault 50$$boostset Vigilant_Assault 50$$boostset Vigilant_Assault 50"
+					Option "Rech/Chance for Minor PBAoE +Absorb" "boost Crafted_Vigilant_Assault_F Crafted_Vigilant_Assault_F 50"
+				}
+				Menu "Superior Vigilant Assault (50)"
+				{
+					Option "1x Set" "boostset Superior_Vigilant_Assault 50"
+					Option "3x Set" "boostset Superior_Vigilant_Assault 50$$boostset Superior_Vigilant_Assault 50$$boostset Superior_Vigilant_Assault 50"
+					Option "5x Set" "boostset Superior_Vigilant_Assault 50$$boostset Superior_Vigilant_Assault 50$$boostset Superior_Vigilant_Assault 50$$boostset Superior_Vigilant_Assault 50$$boostset Superior_Vigilant_Assault 50"
+					Option "Rech/Chance for Minor PBAoE +Absorb" "boost Crafted_Superior_Vigilant_Assault_F Crafted_Superior_Vigilant_Assault_F 50"
+				}
+			}
+			Menu "Dominator"
+			{
+				Menu "Ascendency of the Dominator (5)"
+				{
+					Option "1x Set" "boostset Ascendency_of_the_Dominator 50"
+					Option "3x Set" "boostset Ascendency_of_the_Dominator 50$$boostset Ascendency_of_the_Dominator 50$$boostset Ascendency_of_the_Dominator 50"
+					Option "5x Set" "boostset Ascendency_of_the_Dominator 50$$boostset Ascendency_of_the_Dominator 50$$boostset Ascendency_of_the_Dominator 50$$boostset Ascendency_of_the_Dominator 50$$boostset Ascendency_of_the_Dominator 50"
+					Option "Rech/Chance +DMG" "boost Crafted_Ascendency_of_the_Dominator_F Crafted_Ascendency_of_the_Dominator_F 50"
+				}
+				Menu "Superior Ascendency of the Dominator (50)"
+				{
+					Option "1x Set" "boostset Superior_Ascendency_of_the_Dominator 50"
+					Option "3x Set" "boostset Superior_Ascendency_of_the_Dominator 50$$boostset Superior_Ascendency_of_the_Dominator 50$$boostset Superior_Ascendency_of_the_Dominator 50"
+					Option "5x Set" "boostset Superior_Ascendency_of_the_Dominator 50$$boostset Superior_Ascendency_of_the_Dominator 50$$boostset Superior_Ascendency_of_the_Dominator 50$$boostset Superior_Ascendency_of_the_Dominator 50$$boostset Superior_Ascendency_of_the_Dominator 50"
+					Option "Rech/Chance +DMG" "boost Crafted_Superior_Ascendency_of_the_Dominator_F Crafted_Superior_Ascendency_of_the_Dominator_F 50"
+				}
+				Menu "Dominating Grasp (50)"
+				{
+					Option "1x Set" "boostset Dominating_Grasp 50"
+					Option "3x Set" "boostset Dominating_Grasp 50$$boostset Dominating_Grasp 50$$boostset Dominating_Grasp 50"
+					Option "5x Set" "boostset Dominating_Grasp 50$$boostset Dominating_Grasp 50$$boostset Dominating_Grasp 50$$boostset Dominating_Grasp 50$$boostset Dominating_Grasp 50"
+					Option "Rech/Chance for Fiery Orb" "boost Crafted_Dominating_Grasp_F Crafted_Dominating_Grasp_F 50"
+				}
+				Menu "Superior Dominating Grasp (50)"
+				{
+					Option "1x Set" "boostset Superior_Dominating_Grasp 50"
+					Option "3x Set" "boostset Superior_Dominating_Grasp 50$$boostset Superior_Dominating_Grasp 50$$boostset Superior_Dominating_Grasp 50"
+					Option "5x Set" "boostset Superior_Dominating_Grasp 50$$boostset Superior_Dominating_Grasp 50$$boostset Superior_Dominating_Grasp 50$$boostset Superior_Dominating_Grasp 50$$boostset Superior_Dominating_Grasp 50"
+					Option "Rech/Chance for Fiery Orb" "boost Crafted_Superior_Dominating_Grasp_F Crafted_Superior_Dominating_Grasp_F 50"
+				}
+			}
+			Menu "Kheldian"
+			{
+				Menu "Kheldian's Grace (50)"
+				{
+					Option "1x Set" "boostset Kheldians_Grace 50"
+					Option "3x Set" "boostset Kheldians_Grace 50$$boostset Kheldians_Grace 50$$boostset Kheldians_Grace 50"
+					Option "5x Set" "boostset Kheldians_Grace 50$$boostset Kheldians_Grace 50$$boostset Kheldians_Grace 50$$boostset Kheldians_Grace 50$$boostset Kheldians_Grace 50"
+					Option "Rech/Form Empowerment" "boost Crafted_Kheldians_Grace_F Crafted_Kheldians_Grace_F 50"
+				}
+				Menu "Superior Kheldian's Grace (50)"
+				{
+					Option "1x Set" "boostset Superior_Kheldians_Grace 50"
+					Option "3x Set" "boostset Superior_Kheldians_Grace 50$$boostset Superior_Kheldians_Grace 50$$boostset Superior_Kheldians_Grace 50"
+					Option "5x Set" "boostset Superior_Kheldians_Grace 50$$boostset Superior_Kheldians_Grace 50$$boostset Superior_Kheldians_Grace 50$$boostset Superior_Kheldians_Grace 50$$boostset Superior_Kheldians_Grace 50"
+					Option "Rech/Form Empowerment" "boost Crafted_Superior_Kheldians_Grace_F Crafted_Superior_Kheldians_Grace_F 50"
+				}
+				Menu "Essence Transfer (50)"
+				{
+					Option "1x Set" "boostset Essence_Transfer 50"
+					Option "3x Set" "boostset Essence_Transfer 50$$boostset Essence_Transfer 50$$boostset Essence_Transfer 50"
+					Option "5x Set" "boostset Essence_Transfer 50$$boostset Essence_Transfer 50$$boostset Essence_Transfer 50$$boostset Essence_Transfer 50$$boostset Essence_Transfer 50"
+					Option "Rech/Global Heal Proc" "boost Crafted_Essence_Transfer_F Crafted_Essence_Transfer_F 50"
+				}
+				Menu "Superior Essence Transfer (50)"
+				{
+					Option "1x Set" "boostset Superior_Essence_Transfer 50"
+					Option "3x Set" "boostset Superior_Essence_Transfer 50$$boostset Superior_Essence_Transfer 50$$boostset Superior_Essence_Transfer 50"
+					Option "5x Set" "boostset Superior_Essence_Transfer 50$$boostset Superior_Essence_Transfer 50$$boostset Superior_Essence_Transfer 50$$boostset Superior_Essence_Transfer 50$$boostset Superior_Essence_Transfer 50"
+					Option "Rech/Global Heal Proc" "boost Crafted_Superior_Essence_Transfer_F Crafted_Superior_Essence_Transfer_F 50"
+				}
+			}
+			Menu "Mastermind"
+			{
+				Menu "Command of the Mastermind (50)"
+				{
+					Option "1x Set" "boostset Command_of_the_Mastermind 50"
+					Option "3x Set" "boostset Command_of_the_Mastermind 50$$boostset Command_of_the_Mastermind 50$$boostset Command_of_the_Mastermind 50"
+					Option "5x Set" "boostset Command_of_the_Mastermind 50$$boostset Command_of_the_Mastermind 50$$boostset Command_of_the_Mastermind 50$$boostset Command_of_the_Mastermind 50$$boostset Command_of_the_Mastermind 50"
+					Option "Rech/Pet AoE Def Aura" "boost Crafted_Command_of_the_Mastermind_F Crafted_Command_of_the_Mastermind_F 50"
+				}
+				Menu "Superior Command of the Mastermind (50)"
+				{
+					Option "1x Set" "boostset Superior_Command_of_the_Mastermind 50"
+					Option "3x Set" "boostset Superior_Command_of_the_Mastermind 50$$boostset Superior_Command_of_the_Mastermind 50$$boostset Superior_Command_of_the_Mastermind 50"
+					Option "5x Set" "boostset Superior_Command_of_the_Mastermind 50$$boostset Superior_Command_of_the_Mastermind 50$$boostset Superior_Command_of_the_Mastermind 50$$boostset Superior_Command_of_the_Mastermind 50$$boostset Superior_Command_of_the_Mastermind 50"
+					Option "Rech/Pet AoE Def Aura" "boost Crafted_Superior_Command_of_the_Mastermind_F Crafted_Superior_Command_of_the_Mastermind_F 50"
+				}
+				Menu "Mark of Supremacy (50)"
+				{
+					Option "1x Set" "boostset Mark_of_Supremacy 50"
+					Option "3x Set" "boostset Mark_of_Supremacy 50$$boostset Mark_of_Supremacy 50$$boostset Mark_of_Supremacy 50"
+					Option "5x Set" "boostset Mark_of_Supremacy 50$$boostset Mark_of_Supremacy 50$$boostset Mark_of_Supremacy 50$$boostset Mark_of_Supremacy 50$$boostset Mark_of_Supremacy 50"
+					Option "End/Pet + Resist(All) & +Regen Aura" "boost Crafted_Mark_of_Supremacy_F Crafted_Mark_of_Supremacy_F 50"
+				}
+				Menu "Superior Mark of Supremacy (50)"
+				{
+					Option "1x Set" "boostset Superior_Mark_of_Supremacy 50"
+					Option "3x Set" "boostset Superior_Mark_of_Supremacy 50$$boostset Superior_Mark_of_Supremacy 50$$boostset Superior_Mark_of_Supremacy 50"
+					Option "5x Set" "boostset Superior_Mark_of_Supremacy 50$$boostset Superior_Mark_of_Supremacy 50$$boostset Superior_Mark_of_Supremacy 50$$boostset Superior_Mark_of_Supremacy 50$$boostset Superior_Mark_of_Supremacy 50"
+					Option "End/Pet + Resist(All) & +Regen Aura" "boost Crafted_Superior_Mark_of_Supremacy_F Crafted_Superior_Mark_of_Supremacy_F 50"
+				}
+			}
+			Menu "Scrapper"
+			{
+				Menu "Scrapper's Strike (50)"
+				{
+					Option "1x Set" "boostset Scrappers_Strike 50"
+					Option "3x Set" "boostset Scrappers_Strike 50$$boostset Scrappers_Strike 50$$boostset Scrappers_Strike 50"
+					Option "5x Set" "boostset Scrappers_Strike 50$$boostset Scrappers_Strike 50$$boostset Scrappers_Strike 50$$boostset Scrappers_Strike 50$$boostset Scrappers_Strike 50"
+					Option "Rech/Critical Hit Bonus" "boost Crafted_Scrappers_Strike_F Crafted_Scrappers_Strike_F 50"
+				}
+				Menu "Superior Scrapper's Strike (50)"
+				{
+					Option "1x Set" "boostset Superior_Scrappers_Strike 50"
+					Option "3x Set" "boostset Superior_Scrappers_Strike 50$$boostset Superior_Scrappers_Strike 50$$boostset Superior_Scrappers_Strike 50"
+					Option "5x Set" "boostset Superior_Scrappers_Strike 50$$boostset Superior_Scrappers_Strike 50$$boostset Superior_Scrappers_Strike 50$$boostset Superior_Scrappers_Strike 50$$boostset Superior_Scrappers_Strike 50"
+					Option "Rech/Critical Hit Bonus" "boost Crafted_Superior_Scrappers_Strike_F Crafted_Superior_Scrappers_Strike_F 50"
+				}
+				Menu "Critical Strikes (50)"
+				{
+					Option "1x Set" "boostset Critical_Strikes 50"
+					Option "3x Set" "boostset Critical_Strikes 50$$boostset Critical_Strikes 50$$boostset Critical_Strikes 50"
+					Option "5x Set" "boostset Critical_Strikes 50$$boostset Critical_Strikes 50$$boostset Critical_Strikes 50$$boostset Critical_Strikes 50$$boostset Critical_Strikes 50"
+					Option "Rech/+50% Critical Hit Chance Proc" "boost Crafted_Critical_Strikes_F Crafted_Critical_Strikes_F 50"
+				}
+				Menu "Superior Critical Strikes (50)"
+				{
+					Option "1x Set" "boostset Superior_Critical_Strikes 50"
+					Option "3x Set" "boostset Superior_Critical_Strikes 50$$boostset Superior_Critical_Strikes 50$$boostset Superior_Critical_Strikes 50"
+					Option "5x Set" "boostset Superior_Critical_Strikes 50$$boostset Superior_Critical_Strikes 50$$boostset Superior_Critical_Strikes 50$$boostset Superior_Critical_Strikes 50$$boostset Superior_Critical_Strikes 50"
+					Option "Rech/+50% Critical Hit Chance Proc" "boost Crafted_Superior_Critical_Strikes_F Crafted_Superior_Critical_Strikes_F 50"
+				}
+			}
+			Menu "Soldiers of Arachnos"
+			{
+				Menu "Dominion of Arachnos (50)"
+				{
+					Option "1x Set" "boostset Dominion_of_Arachnos 50"
+					Option "3x Set" "boostset Dominion_of_Arachnos 50$$boostset Dominion_of_Arachnos 50$$boostset Dominion_of_Arachnos 50"
+					Option "5x Set" "boostset Dominion_of_Arachnos 50$$boostset Dominion_of_Arachnos 50$$boostset Dominion_of_Arachnos 50$$boostset Dominion_of_Arachnos 50$$boostset Dominion_of_Arachnos 50"
+					Option "Rech/Chance for -Dmg and Terrorize" "boost Crafted_Dominion_of_Arachnos_F Crafted_Dominion_of_Arachnos_F 50"
+				}
+				Menu "Superior Dominion of Arachnos (50)"
+				{
+					Option "1x Set" "boostset Superior_Dominion_of_Arachnos 50"
+					Option "3x Set" "boostset Superior_Dominion_of_Arachnos 50$$boostset Superior_Dominion_of_Arachnos 50$$boostset Superior_Dominion_of_Arachnos 50"
+					Option "5x Set" "boostset Superior_Dominion_of_Arachnos 50$$boostset Superior_Dominion_of_Arachnos 50$$boostset Superior_Dominion_of_Arachnos 50$$boostset Superior_Dominion_of_Arachnos 50$$boostset Superior_Dominion_of_Arachnos 50"
+					Option "Rech/Chance for -Dmg and Terrorize" "boost Crafted_Superior_Dominion_of_Arachnos_F Crafted_Superior_Dominion_of_Arachnos_F 50"
+				}
+				Menu "Spider's Bite (50)"
+				{
+					Option "1x Set" "boostset Spiders_Bite 50"
+					Option "3x Set" "boostset Spiders_Bite 50$$boostset Spiders_Bite 50$$boostset Spiders_Bite 50"
+					Option "5x Set" "boostset Spiders_Bite 50$$boostset Spiders_Bite 50$$boostset Spiders_Bite 50$$boostset Spiders_Bite 50$$boostset Spiders_Bite 50"
+					Option "Rech/Global Chance for Toxic DMG" "boost Crafted_Spiders_Bite_F Crafted_Spiders_Bite_F 50"
+				}
+				Menu "Superior Spider's Bite (50)"
+				{
+					Option "1x Set" "boostset Superior_Spiders_Bite 50"
+					Option "3x Set" "boostset Superior_Spiders_Bite 50$$boostset Superior_Spiders_Bite 50$$boostset Superior_Spiders_Bite 50"
+					Option "5x Set" "boostset Superior_Spiders_Bite 50$$boostset Superior_Spiders_Bite 50$$boostset Superior_Spiders_Bite 50$$boostset Superior_Spiders_Bite 50$$boostset Superior_Spiders_Bite 50"
+					Option "Rech/Global Chance for Toxic DMG" "boost Crafted_Superior_Spiders_Bite_F Crafted_Superior_Spiders_Bite_F 50"
+				}
+			}
+			Menu "Stalker"
+			{
+				Menu "Stalker's Guile (50)"
+				{
+					Option "1x Set" "boostset Stalkers_Guile 50"
+					Option "3x Set" "boostset Stalkers_Guile 50$$boostset Stalkers_Guile 50$$boostset Stalkers_Guile 50"
+					Option "5x Set" "boostset Stalkers_Guile 50$$boostset Stalkers_Guile 50$$boostset Stalkers_Guile 50$$boostset Stalkers_Guile 50$$boostset Stalkers_Guile 50"
+					Option "Rech/Chance to Hide" "boost Crafted_Stalkers_Guile_F Crafted_Stalkers_Guile_F 50"
+				}
+				Menu "Superior Stalker's Guile (50)"
+				{
+					Option "1x Set" "boostset Superior_Stalkers_Guile 50"
+					Option "3x Set" "boostset Superior_Stalkers_Guile 50$$boostset Superior_Stalkers_Guile 50$$boostset Superior_Stalkers_Guile 50"
+					Option "5x Set" "boostset Superior_Stalkers_Guile 50$$boostset Superior_Stalkers_Guile 50$$boostset Superior_Stalkers_Guile 50$$boostset Superior_Stalkers_Guile 50$$boostset Superior_Stalkers_Guile 50"
+					Option "Rech/Chance to Hide" "boost Crafted_Superior_Stalkers_Guile_F Crafted_Superior_Stalkers_Guile_F 50"
+				}
+				Menu "Assassin's Mark (50)"
+				{
+					Option "1x Set" "boostset Assassins_Mark 50"
+					Option "3x Set" "boostset Assassins_Mark 50$$boostset Assassins_Mark 50$$boostset Assassins_Mark 50"
+					Option "5x Set" "boostset Assassins_Mark 50$$boostset Assassins_Mark 50$$boostset Assassins_Mark 50$$boostset Assassins_Mark 50$$boostset Assassins_Mark 50"
+					Option "Rech/Chance to Recharge Build Up" "boost Crafted_Assassins_Mark_F Crafted_Assassins_Mark_F 50"
+				}
+				Menu "Superior Assassin's Mark (50)"
+				{
+					Option "1x Set" "boostset Superior_Assassins_Mark 50"
+					Option "3x Set" "boostset Superior_Assassins_Mark 50$$boostset Superior_Assassins_Mark 50$$boostset Superior_Assassins_Mark 50"
+					Option "5x Set" "boostset Superior_Assassins_Mark 50$$boostset Superior_Assassins_Mark 50$$boostset Superior_Assassins_Mark 50$$boostset Superior_Assassins_Mark 50$$boostset Superior_Assassins_Mark 50"
+					Option "Rech/Chance to Recharge Build Up" "boost Crafted_Superior_Assassins_Mark_F Crafted_Superior_Assassins_Mark_F 50"
+				}
+			}
+			Menu "Tank"
+			{
+				Menu "Might of the Tanker (50)"
+				{
+					Option "1x Set" "boostset Might_of_the_Tanker 50"
+					Option "3x Set" "boostset Might_of_the_Tanker 50$$boostset Might_of_the_Tanker 50$$boostset Might_of_the_Tanker 50"
+					Option "5x Set" "boostset Might_of_the_Tanker 50$$boostset Might_of_the_Tanker 50$$boostset Might_of_the_Tanker 50$$boostset Might_of_the_Tanker 50$$boostset Might_of_the_Tanker 50"
+					Option "Rech/Chance for +Res(All)" "boost Crafted_Might_of_the_Tanker_F Crafted_Might_of_the_Tanker_F 50"
+				}
+				Menu "Superior Might of the Tanker (50)"
+				{
+					Option "1x Set" "boostset Superior_Might_of_the_Tanker 50"
+					Option "3x Set" "boostset Superior_Might_of_the_Tanker 50$$boostset Superior_Might_of_the_Tanker 50$$boostset Superior_Might_of_the_Tanker 50"
+					Option "5x Set" "boostset Superior_Might_of_the_Tanker 50$$boostset Superior_Might_of_the_Tanker 50$$boostset Superior_Might_of_the_Tanker 50$$boostset Superior_Might_of_the_Tanker 50$$boostset Superior_Might_of_the_Tanker 50"
+					Option "Rech/Chance for +Res(All)" "boost Crafted_Superior_Might_of_the_Tanker_F Crafted_Superior_Might_of_the_Tanker_F 50"
+				}
+				Menu "Gauntleted Fist (50)"
+				{
+					Option "1x Set" "boostset Gauntleted_Fist 50"
+					Option "3x Set" "boostset Gauntleted_Fist 50$$boostset Gauntleted_Fist 50$$boostset Gauntleted_Fist 50"
+					Option "5x Set" "boostset Gauntleted_Fist 50$$boostset Gauntleted_Fist 50$$boostset Gauntleted_Fist 50$$boostset Gauntleted_Fist 50$$boostset Gauntleted_Fist 50"
+					Option "Rech/Chance for +Absorb" "boost Crafted_Gauntleted_Fist_F Crafted_Gauntleted_Fist_F 50"
+				}
+				Menu "Superior Gauntleted Fist (50)"
+				{
+					Option "1x Set" "boostset Superior_Gauntleted_Fist 50"
+					Option "3x Set" "boostset Superior_Gauntleted_Fist 50$$boostset Superior_Gauntleted_Fist 50$$boostset Superior_Gauntleted_Fist 50"
+					Option "5x Set" "boostset Superior_Gauntleted_Fist 50$$boostset Superior_Gauntleted_Fist 50$$boostset Superior_Gauntleted_Fist 50$$boostset Superior_Gauntleted_Fist 50$$boostset Superior_Gauntleted_Fist 50"
+					Option "Rech/Chance for +Absorb" "boost Crafted_Superior_Gauntleted_Fist_F Crafted_Superior_Gauntleted_Fist_F 50"
+				}
+			}
+		}
+		Menu "Offensive"
+		{
+			Menu "Melee"
+			{
+				Menu "Bonesnap (25)"
+				{
+					Option "1x Set" "boostset Bonesnap 25"
+					Option "3x Set" "boostset Bonesnap 25$$boostset Bonesnap 25$$boostset Bonesnap 25"
+					Option "5x Set" "boostset Bonesnap 25$$boostset Bonesnap 25$$boostset Bonesnap 25$$boostset Bonesnap 25$$boostset Bonesnap 25"
+				}
+				Menu "Pulverizing Fisticuffs (25)"
+				{
+					Option "1x Set" "boostset Pulverizing_Fisticuffs 25"
+					Option "3x Set" "boostset Pulverizing_Fisticuffs 25$$boostset Pulverizing_Fisticuffs 25$$boostset Pulverizing_Fisticuffs 25"
+					Option "5x Set" "boostset Pulverizing_Fisticuffs 25$$boostset Pulverizing_Fisticuffs 25$$boostset Pulverizing_Fisticuffs 25$$boostset Pulverizing_Fisticuffs 25$$boostset Pulverizing_Fisticuffs 25"
+				}
+				Menu "Bruising Blow (30)"
+				{
+					Option "1x Set" "boostset Bruising_Blow 30"
+					Option "3x Set" "boostset Bruising_Blow 30$$boostset Bruising_Blow 30$$boostset Bruising_Blow 30"
+					Option "5x Set" "boostset Bruising_Blow 30$$boostset Bruising_Blow 30$$boostset Bruising_Blow 30$$boostset Bruising_Blow 30$$boostset Bruising_Blow 30"
+				}
+				Menu "Pounding Slugfest (30)"
+				{
+					Option "1x Set" "boostset Pounding_Slugfest 30"
+					Option "3x Set" "boostset Pounding_Slugfest 30$$boostset Pounding_Slugfest 30$$boostset Pounding_Slugfest 30"
+					Option "5x Set" "boostset Pounding_Slugfest 30$$boostset Pounding_Slugfest 30$$boostset Pounding_Slugfest 30$$boostset Pounding_Slugfest 30$$boostset Pounding_Slugfest 30"
+					Option "Chance to Disorient" "boost Crafted_Pounding_Slugfest_D Crafted_Pounding_Slugfest_D 30"
+				}
+				Menu "Smashing Haymaker (35)"
+				{
+					Option "1x Set" "boostset Smashing_Haymaker 35"
+					Option "3x Set" "boostset Smashing_Haymaker 35$$boostset Smashing_Haymaker 35$$boostset Smashing_Haymaker 35"
+					Option "5x Set" "boostset Smashing_Haymaker 35$$boostset Smashing_Haymaker 35$$boostset Smashing_Haymaker 35$$boostset Smashing_Haymaker 35$$boostset Smashing_Haymaker 35"
+				}
+				Menu "Kinetic Combat (35)"
+				{
+					Option "1x Set" "boostset Kinetic_Combat 35"
+					Option "3x Set" "boostset Kinetic_Combat 35$$boostset Kinetic_Combat 35$$boostset Kinetic_Combat 35"
+					Option "5x Set" "boostset Kinetic_Combat 35$$boostset Kinetic_Combat 35$$boostset Kinetic_Combat 35$$boostset Kinetic_Combat 35$$boostset Kinetic_Combat 35"
+					Option "Chance to Knockdown" "boost Crafted_Kinetic_Combat_E Crafted_Kinetic_Combat_E 35"
+				}
+				Menu "Focused Smite (40)"
+				{
+					Option "1x Set" "boostset Focused_Smite 40"
+					Option "3x Set" "boostset Focused_Smite 40$$boostset Focused_Smite 40$$boostset Focused_Smite 40"
+					Option "5x Set" "boostset Focused_Smite 40$$boostset Focused_Smite 40$$boostset Focused_Smite 40$$boostset Focused_Smite 40$$boostset Focused_Smite 40"
+				}
+				Menu "Touch of Death (40)"
+				{
+					Option "1x Set" "boostset Touch_of_Death 40"
+					Option "3x Set" "boostset Touch_of_Death 40$$boostset Touch_of_Death 40$$boostset Touch_of_Death 40"
+					Option "5x Set" "boostset Touch_of_Death 40$$boostset Touch_of_Death 40$$boostset Touch_of_Death 40$$boostset Touch_of_Death 40$$boostset Touch_of_Death 40"
+					Option "Chance for Negative Energy Damage" "boost Crafted_Touch_of_Death_F Crafted_Touch_of_Death_F 40"
+				}
+				Menu "Crushing Impact (50)"
+				{
+					Option "1x Set" "boostset Crushing_Impact 40"
+					Option "3x Set" "boostset Crushing_Impact 40$$boostset Crushing_Impact 40$$boostset Crushing_Impact 40"
+					Option "5x Set" "boostset Crushing_Impact 40$$boostset Crushing_Impact 40$$boostset Crushing_Impact 40$$boostset Crushing_Impact 40$$boostset Crushing_Impact 40"
+				}
+				Menu "Mako's Bite (50)"
+				{
+					Option "1x Set" "boostset Makos_Bite 50"
+					Option "3x Set" "boostset Makos_Bite 50$$boostset Makos_Bite 50$$boostset Makos_Bite 50"
+					Option "5x Set" "boostset Makos_Bite 50$$boostset Makos_Bite 50$$boostset Makos_Bite 50$$boostset Makos_Bite 50$$boostset Makos_Bite 50"
+					Option "Chance for Lethal Damage" "boost Crafted_Makos_Bite_F Crafted_Makos_Bite_F 50"
+				}
+				Menu "Hecatomb (50)"
+				{
+					Option "1x Set" "boostset Hecatomb 50"
+					Option "3x Set" "boostset Hecatomb 50$$boostset Hecatomb 50$$boostset Hecatomb 50"
+					Option "5x Set" "boostset Hecatomb 50$$boostset Hecatomb 50$$boostset Hecatomb 50$$boostset Hecatomb 50$$boostset Hecatomb 50"
+					Option "Chance for Negative Energy Damage" "boost Crafted_Hecatomb_F Crafted_Hecatomb_F 50"
+				}
+				Menu "Gladiator's Strike (50)"
+				{
+					Option "1x Set" "boostset Gladiators_Strike 50"
+					Option "3x Set" "boostset Gladiators_Strike 50$$boostset Gladiators_Strike 50$$boostset Gladiators_Strike 50"
+					Option "5x Set" "boostset Gladiators_Strike 50$$boostset Gladiators_Strike 50$$boostset Gladiators_Strike 50$$boostset Gladiators_Strike 50$$boostset Gladiators_Strike 50"
+					Option "Chance for Smashing Damage" "boost Crafted_Gladiators_Strike_F Crafted_Gladiators_Strike_F 50"
+				}
+				Menu "Blistering Cold (50)"
+				{
+					Option "1x Set" "boostset Blistering_Cold 50"
+					Option "3x Set" "boostset Blistering_Cold 50$$boostset Blistering_Cold 50$$boostset Blistering_Cold 50"
+					Option "5x Set" "boostset Blistering_Cold 50$$boostset Blistering_Cold 50$$boostset Blistering_Cold 50$$boostset Blistering_Cold 50$$boostset Blistering_Cold 50"
+					Option "Chance for Hold" "boost Crafted_Blistering_Cold_F Crafted_Blistering_Cold_F 50"
+				}
+				Menu "Superior Blistering Cold (50)"
+				{
+					Option "1x Set" "boostset Superior_Blistering_Cold 50"
+					Option "3x Set" "boostset Superior_Blistering_Cold 50$$boostset Superior_Blistering_Cold 50$$boostset Superior_Blistering_Cold 50"
+					Option "5x Set" "boostset Superior_Blistering_Cold 50$$boostset Superior_Blistering_Cold 50$$boostset Superior_Blistering_Cold 50$$boostset Superior_Blistering_Cold 50$$boostset Superior_Blistering_Cold 50"
+					Option "Chance for Hold" "boost Crafted_Superior_Blistering_Cold_F Crafted_Superior_Blistering_Cold_F 50"
+				}
+			}
+			Menu "PBAoE"
+			{
+				Menu "Cleaving Blow (50)"
+				{
+					Option "1x Set" "boostset Cleaving_Blow 50"
+					Option "3x Set" "boostset Cleaving_Blow 50$$boostset Cleaving_Blow 50$$boostset Cleaving_Blow 50"
+					Option "5x Set" "boostset Cleaving_Blow 50$$boostset Cleaving_Blow 50$$boostset Cleaving_Blow 50$$boostset Cleaving_Blow 50$$boostset Cleaving_Blow 50"
+				}
+				Menu "Eradication (30)"
+				{
+					Option "1x Set" "boostset Eradication 30"
+					Option "3x Set" "boostset Eradication 30$$boostset Eradication 30$$boostset Eradication 30"
+					Option "5x Set" "boostset Eradication 30$$boostset Eradication 30$$boostset Eradication 30$$boostset Eradication 30$$boostset Eradication 30"
+					Option "Chance for Energy Damage" "boost Crafted_Eradication_F Crafted_Eradication_F 30"
+				}
+				Menu "Multi-Strike (50)"
+				{
+					Option "1x Set" "boostset Multi-Strike 50"
+					Option "3x Set" "boostset Multi-Strike 50$$boostset Multi-Strike 50$$boostset Multi-Strike 50"
+					Option "5x Set" "boostset Multi-Strike 50$$boostset Multi-Strike 50$$boostset Multi-Strike 50$$boostset Multi-Strike 50$$boostset Multi-Strike 50"
+				}
+				Menu "Scirocco's Dervish (50)"
+				{
+					Option "1x Set" "boostset Sciroccos_Dervish 50"
+					Option "3x Set" "boostset Sciroccos_Dervish 50$$boostset Sciroccos_Dervish 50$$boostset Sciroccos_Dervish 50"
+					Option "5x Set" "boostset Sciroccos_Dervish 50$$boostset Sciroccos_Dervish 50$$boostset Sciroccos_Dervish 50$$boostset Sciroccos_Dervish 50$$boostset Sciroccos_Dervish 50"
+					Option "Chance for Lethal Damage" "boost Crafted_Sciroccos_Dervish_F Crafted_Sciroccos_Dervish_F 50"
+				}
+				Menu "Obliteration (50)"
+				{
+					Option "1x Set" "boostset Obliteration 50"
+					Option "3x Set" "boostset Obliteration 50$$boostset Obliteration 50$$boostset Obliteration 50"
+					Option "5x Set" "boostset Obliteration 50$$boostset Obliteration 50$$boostset Obliteration 50$$boostset Obliteration 50$$boostset Obliteration 50"
+					Option "Chance for Smashing Damage" "boost Crafted_Obliteration_F Crafted_Obliteration_F 50"
+				}
+				Menu "Armageddon (50)"
+				{
+					Option "1x Set" "boostset Armageddon 50"
+					Option "3x Set" "boostset Armageddon 50$$boostset Armageddon 50$$boostset Armageddon 50"
+					Option "5x Set" "boostset Armageddon 50$$boostset Armageddon 50$$boostset Armageddon 50$$boostset Armageddon 50$$boostset Armageddon 50"
+					Option "Chance for Fire Damage" "boost Crafted_Armageddon_F Crafted_Armageddon_F 50"
+				}
+				Menu "Fury of the Gladiator (50)"
+				{
+					Option "1x Set" "boostset Fury_of_the_Gladiator 50"
+					Option "3x Set" "boostset Fury_of_the_Gladiator 50$$boostset Fury_of_the_Gladiator 50$$boostset Fury_of_the_Gladiator 50"
+					Option "5x Set" "boostset Fury_of_the_Gladiator 50$$boostset Fury_of_the_Gladiator 50$$boostset Fury_of_the_Gladiator 50$$boostset Fury_of_the_Gladiator 50$$boostset Fury_of_the_Gladiator 50"
+					Option "Chance for -Resistance" "boost Crafted_Fury_of_the_Gladiator_F Crafted_Fury_of_the_Gladiator_F 50"
+				}
+				Menu "Avalanche (50)"
+				{
+					Option "1x Set" "boostset Avalanche 50"
+					Option "3x Set" "boostset Avalanche 50$$boostset Avalanche 50$$boostset Avalanche 50"
+					Option "5x Set" "boostset Avalanche 50$$boostset Avalanche 50$$boostset Avalanche 50$$boostset Avalanche 50$$boostset Avalanche 50"
+					Option "Rech/Chance for Knockdown" "boost Crafted_Avalanche_F Crafted_Avalanche_F 50"
+				}
+				Menu "Superior Avalanche (50)"
+				{
+					Option "1x Set" "boostset Superior_Avalanche 50"
+					Option "3x Set" "boostset Superior_Avalanche 50$$boostset Superior_Avalanche 50$$boostset Superior_Avalanche 50"
+					Option "5x Set" "boostset Superior_Avalanche 50$$boostset Superior_Avalanche 50$$boostset Superior_Avalanche 50$$boostset Superior_Avalanche 50$$boostset Superior_Avalanche 50"
+					Option "Rech/Chance for Knockdown" "boost Crafted_Superior_Avalanche_F Crafted_Superior_Avalanche_F 50"
+				}
+			}
+			Menu "Ranged"
+			{
+				Menu "Far Strike (25)"
+				{
+					Option "1x Set" "boostset Far_Strike 25"
+					Option "3x Set" "boostset Far_Strike 25$$boostset Far_Strike 25$$boostset Far_Strike 25"
+					Option "5x Set" "boostset Far_Strike 25$$boostset Far_Strike 25$$boostset Far_Strike 25$$boostset Far_Strike 25$$boostset Far_Strike 25"
+				}
+				Menu "Salvo (25)"
+				{
+					Option "1x Set" "boostset Salvo 25"
+					Option "3x Set" "boostset Salvo 25$$boostset Salvo 25$$boostset Salvo 25"
+					Option "5x Set" "boostset Salvo 25$$boostset Salvo 25$$boostset Salvo 25$$boostset Salvo 25$$boostset Salvo 25"
+				}
+				Menu "Volley Fire (30)"
+				{
+					Option "1x Set" "boostset Volley_Fire 30"
+					Option "3x Set" "boostset Volley_Fire 30$$boostset Volley_Fire 30$$boostset Volley_Fire 30"
+					Option "5x Set" "boostset Volley_Fire 30$$boostset Volley_Fire 30$$boostset Volley_Fire 30$$boostset Volley_Fire 30$$boostset Volley_Fire 30"
+				}
+				Menu "Tempest (30)"
+				{
+					Option "1x Set" "boostset Tempest 30"
+					Option "3x Set" "boostset Tempest 30$$boostset Tempest 30$$boostset Tempest 30"
+					Option "5x Set" "boostset Tempest 30$$boostset Tempest 30$$boostset Tempest 30$$boostset Tempest 30$$boostset Tempest 30"
+					Option "Chance for End Drain" "boost Crafted_Tempest_D Crafted_Tempest_D 30"
+				}
+				Menu "Maelstrom's Fury (35)"
+				{
+					Option "1x Set" "boostset Maelstroms_Fury 35"
+					Option "3x Set" "boostset Maelstroms_Fury 35$$boostset Maelstroms_Fury 35$$boostset Maelstroms_Fury 35"
+					Option "5x Set" "boostset Maelstroms_Fury 35$$boostset Maelstroms_Fury 35$$boostset Maelstroms_Fury 35$$boostset Maelstroms_Fury 35$$boostset Maelstroms_Fury 35"
+				}
+				Menu "Entropic Chaos (35)"
+				{
+					Option "1x Set" "boostset Entropic_Chaos 35"
+					Option "3x Set" "boostset Entropic_Chaos 35$$boostset Entropic_Chaos 35$$boostset Entropic_Chaos 35"
+					Option "5x Set" "boostset Entropic_Chaos 35$$boostset Entropic_Chaos 35$$boostset Entropic_Chaos 35$$boostset Entropic_Chaos 35$$boostset Entropic_Chaos 35"
+					Option "Chance to Heal" "boost Crafted_Entropic_Chaos_E Crafted_Entropic_Chaos_E "
+				}
+				Menu "Ruin (40)"
+				{
+					Option "1x Set" "boostset Ruin 40"
+					Option "3x Set" "boostset Ruin 40$$boostset Ruin 40$$boostset Ruin 40"
+					Option "5x Set" "boostset Ruin 40$$boostset Ruin 40$$boostset Ruin 40$$boostset Ruin 40$$boostset Ruin 40"
+				}
+				Menu "Decimation (40)"
+				{
+					Option "1x Set" "boostset Decimation 40"
+					Option "3x Set" "boostset Decimation 40$$boostset Decimation 40$$boostset Decimation 40"
+					Option "5x Set" "boostset Decimation 40$$boostset Decimation 40$$boostset Decimation 40$$boostset Decimation 40$$boostset Decimation 40"
+					Option "Chance for Buildup" "boost Crafted_Decimation_F Crafted_Decimation_F 40"
+				}
+				Menu "Thunderstrike (50)"
+				{
+					Option "1x Set" "boostset Thunderstrike 50"
+					Option "3x Set" "boostset Thunderstrike 50$$boostset Thunderstrike 50$$boostset Thunderstrike 50"
+					Option "5x Set" "boostset Thunderstrike 50$$boostset Thunderstrike 50$$boostset Thunderstrike 50$$boostset Thunderstrike 50$$boostset Thunderstrike 50"
+				}
+				Menu "Devastation (50)"
+				{
+					Option "1x Set" "boostset Devastation 50"
+					Option "3x Set" "boostset Devastation 50$$boostset Devastation 50$$boostset Devastation 50"
+					Option "5x Set" "boostset Devastation 50$$boostset Devastation 50$$boostset Devastation 50$$boostset Devastation 50$$boostset Devastation 50"
+					Option "Chance to Hold" "boost Crafted_Devastation_F Crafted_Devastation_F 50"
+				}
+				Menu "Apocalypse (50)"
+				{
+					Option "1x Set" "boostset Apocalypse 50"
+					Option "3x Set" "boostset Apocalypse 50$$boostset Apocalypse 50$$boostset Apocalypse 50"
+					Option "5x Set" "boostset Apocalypse 50$$boostset Apocalypse 50$$boostset Apocalypse 50$$boostset Apocalypse 50$$boostset Apocalypse 50"
+					Option "Chance for Negative Energy Damage" "boost Crafted_Apocalypse_F Crafted_Apocalypse_F 50"
+				}
+				Menu "Gladiator's Javelin (50)"
+				{
+					Option "1x Set" "boostset Gladiators_Javelin 50"
+					Option "3x Set" "boostset Gladiators_Javelin 50$$boostset Gladiators_Javelin 50$$boostset Gladiators_Javelin 50"
+					Option "5x Set" "boostset Gladiators_Javelin 50$$boostset Gladiators_Javelin 50$$boostset Gladiators_Javelin 50$$boostset Gladiators_Javelin 50$$boostset Gladiators_Javelin 50"
+					Option "Chance for Toxic Dam" "boost Crafted_Gladiators_Javelin_F Crafted_Gladiators_Javelin_F 50"
+				}
+				Menu "Winter's Bite (50)"
+				{
+					Option "1x Set" "boostset Winters_Bite 50"
+					Option "3x Set" "boostset Winters_Bite 50$$boostset Winters_Bite 50$$boostset Winters_Bite 50"
+					Option "5x Set" "boostset Winters_Bite 50$$boostset Winters_Bite 50$$boostset Winters_Bite 50$$boostset Winters_Bite 50$$boostset Winters_Bite 50"
+					Option "Rech/Chance to Hold" "boost Crafted_Winters_Bite_F Crafted_Winters_Bite_F 50"
+				}
+				Menu "Superior Winter's Bite (50)"
+				{
+					Option "1x Set" "boostset Superior_Winters_Bite 50"
+					Option "3x Set" "boostset Superior_Winters_Bite 50$$boostset Superior_Winters_Bite 50$$boostset Superior_Winters_Bite 50"
+					Option "5x Set" "boostset Superior_Winters_Bite 50$$boostset Superior_Winters_Bite 50$$boostset Superior_Winters_Bite 50$$boostset Superior_Winters_Bite 50$$boostset Superior_Winters_Bite 50"
+					Option "Rech/Chance to Hold" "boost Crafted_Superior_Winters_Bite_F Crafted_Superior_Winters_Bite_F 50"
+				}
+			}
+			Menu "Sniper"
+			{
+				Menu "Exploit Weakness (50)"
+				{
+					Option "1x Set" "boostset Exploit_Weakness 50"
+					Option "3x Set" "boostset Exploit_Weakness 50$$boostset Exploit_Weakness 50$$boostset Exploit_Weakness 50"
+					Option "5x Set" "boostset Exploit_Weakness 50$$boostset Exploit_Weakness 50$$boostset Exploit_Weakness 50$$boostset Exploit_Weakness 50$$boostset Exploit_Weakness 50"
+				}
+				Menu "Calibrated Accuracy (50)"
+				{
+					Option "1x Set" "boostset Calibrated_Accuracy 50"
+					Option "3x Set" "boostset Calibrated_Accuracy 50$$boostset Calibrated_Accuracy 50$$boostset Calibrated_Accuracy 50"
+					Option "5x Set" "boostset Calibrated_Accuracy 50$$boostset Calibrated_Accuracy 50$$boostset Calibrated_Accuracy 50$$boostset Calibrated_Accuracy 50$$boostset Calibrated_Accuracy 50"
+				}
+				Menu "Executioner's Contract (50)"
+				{
+					Option "1x Set" "boostset Executioners_Contract 50"
+					Option "3x Set" "boostset $$boostset $$boostset "
+					Option "5x Set" "boostset $$boostset $$boostset $$boostset $$boostset "
+					Option "" "boost Crafted_Executioners_Contract_F Crafted_Executioners_Contract_F 50"
+				}
+				Menu "Extreme Measures (50)"
+				{
+					Option "1x Set" "boostset Extreme_Measures 50"
+					Option "3x Set" "boostset Extreme_Measures 50$$boostset Extreme_Measures 50$$boostset Extreme_Measures 50"
+					Option "5x Set" "boostset Extreme_Measures 50$$boostset Extreme_Measures 50$$boostset Extreme_Measures 50$$boostset Extreme_Measures 50$$boostset Extreme_Measures 50"
+				}
+				Menu "Sting of the Manticore (50)"
+				{
+					Option "1x Set" "boostset Sting_of_the_Manticore 50"
+					Option "3x Set" "boostset Sting_of_the_Manticore 50$$boostset Sting_of_the_Manticore 50$$boostset Sting_of_the_Manticore 50"
+					Option "5x Set" "boostset Sting_of_the_Manticore 50$$boostset Sting_of_the_Manticore 50$$boostset Sting_of_the_Manticore 50$$boostset Sting_of_the_Manticore 50$$boostset Sting_of_the_Manticore 50"
+					Option "Chance for Toxic Damage" "boost Crafted_Sting_of_the_Manticore_F Crafted_Sting_of_the_Manticore_F 50"
+				}
+			}
+			Menu "Targeted AoE"
+			{
+				Menu "Air Burst (50)"
+				{
+					Option "1x Set" "boostset Air_Burst 50"
+					Option "3x Set" "boostset Air_Burst 50$$boostset Air_Burst 50$$boostset Air_Burst 50"
+					Option "5x Set" "boostset Air_Burst 50$$boostset Air_Burst 50$$boostset Air_Burst 50$$boostset Air_Burst 50$$boostset Air_Burst 50"
+				}
+				Menu "Detonation (50)"
+				{
+					Option "1x Set" "boostset Detonation 50"
+					Option "3x Set" "boostset Detonation 50$$boostset Detonation 50$$boostset Detonation 50"
+					Option "5x Set" "boostset Detonation 50$$boostset Detonation 50$$boostset Detonation 50$$boostset Detonation 50$$boostset Detonation 50"
+				}
+				Menu "Positron's Blast (50)"
+				{
+					Option "1x Set" "boostset Positrons_Blast 50"
+					Option "3x Set" "boostset Positrons_Blast 50$$boostset Positrons_Blast 50$$boostset Positrons_Blast 50"
+					Option "5x Set" "boostset Positrons_Blast 50$$boostset Positrons_Blast 50$$boostset Positrons_Blast 50$$boostset Positrons_Blast 50$$boostset Positrons_Blast 50"
+					Option "Chance for Energy damage" "boost Crafted_Positrons_Blast_F Crafted_Positrons_Blast_F 50"
+				}
+				Menu "Ragnarok (50)"
+				{
+					Option "1x Set" "boostset Ragnarok 50"
+					Option "3x Set" "boostset Ragnarok 50$$boostset Ragnarok 50$$boostset Ragnarok 50"
+					Option "5x Set" "boostset Ragnarok 50$$boostset Ragnarok 50$$boostset Ragnarok 50$$boostset Ragnarok 50$$boostset Ragnarok 50"
+					Option "Chance for Knockdown" "boost Crafted_Ragnarok_F Crafted_Ragnarok_F 50"
+				}
+				Menu "Javelin Volley (50)"
+				{
+					Option "1x Set" "boostset Javelin_Volley 50"
+					Option "3x Set" "boostset Javelin_Volley 50$$boostset Javelin_Volley 50$$boostset Javelin_Volley 50"
+					Option "5x Set" "boostset Javelin_Volley 50$$boostset Javelin_Volley 50$$boostset Javelin_Volley 50$$boostset Javelin_Volley 50$$boostset Javelin_Volley 50"
+					Option "Chance for Lethal Damage" "boost Crafted_Javelin_Volley_F Crafted_Javelin_Volley_F 50"
+				}
+				Menu "Frozen Blast (50)"
+				{
+					Option "1x Set" "boostset Frozen_Blast 50"
+					Option "3x Set" "boostset Frozen_Blast 50$$boostset Frozen_Blast 50$$boostset Frozen_Blast 50"
+					Option "5x Set" "boostset Frozen_Blast 50$$boostset Frozen_Blast 50$$boostset Frozen_Blast 50$$boostset Frozen_Blast 50$$boostset Frozen_Blast 50"
+					Option "Rech/Chance for Immobilize" "boost Crafted_Frozen_Blast_F Crafted_Frozen_Blast_F 50"
+				}
+				Menu "Superior Frozen Blast (50)"
+				{
+					Option "1x Set" "boostset Superior_Frozen_Blast 50"
+					Option "3x Set" "boostset Superior_Frozen_Blast 50$$boostset Superior_Frozen_Blast 50$$boostset Superior_Frozen_Blast 50"
+					Option "5x Set" "boostset Superior_Frozen_Blast 50$$boostset Superior_Frozen_Blast 50$$boostset Superior_Frozen_Blast 50$$boostset Superior_Frozen_Blast 50$$boostset Superior_Frozen_Blast 50"
+					Option "Rech/Chance for Immobilize" "boost Crafted_Superior_Frozen_Blast_F Crafted_Superior_Frozen_Blast_F 50"
+				}
+			}
+			Menu "Universal Damage"
+			{
+				Menu "Overwhelming Force (50)"
+				{
+					Option "1x Set" "boostset Overwhelming_Force 50"
+					Option "3x Set" "boostset Overwhelming_Force 50$$boostset Overwhelming_Force 50$$boostset Overwhelming_Force 50"
+					Option "5x Set" "boostset Overwhelming_Force 50$$boostset Overwhelming_Force 50$$boostset Overwhelming_Force 50$$boostset Overwhelming_Force 50$$boostset Overwhelming_Force 50"
+					Option "Dam/Chance for Knockdown/Knockback to Knockdown" "boost Crafted_Overwhelming_Force_F Crafted_Overwhelming_Force_F 50"
+				}
+			}
+		}
+		Menu "Defensive"
+		{
+			Menu "Defense"
+			{
+				Menu "Karma (30)"
+				{
+					Option "1x Set" "boostset Karma 30"
+					Option "3x Set" "boostset Karma 30$$boostset Karma 30$$boostset Karma 30"
+					Option "5x Set" "boostset Karma 30$$boostset Karma 30$$boostset Karma 30$$boostset Karma 30$$boostset Karma 30"
+					Option "Mag 4 Knockback Protection" "boost Crafted_Karma_C Crafted_Karma_C 30"
+				}
+				Menu "Kismet (30)"
+				{
+					Option "1x Set" "boostset Kismet 30"
+					Option "3x Set" "boostset Kismet 30$$boostset Kismet 30$$boostset Kismet 30"
+					Option "5x Set" "boostset Kismet 30$$boostset Kismet 30$$boostset Kismet 30$$boostset Kismet 30$$boostset Kismet 30"
+					Option "Increased ToHit (6%)" "boost Crafted_Kismet_E Crafted_Kismet_E 30"
+				}
+				Menu "Serendipity (40)"
+				{
+					Option "1x Set" "boostset Serendipity 40"
+					Option "3x Set" "boostset Serendipity 40$$boostset Serendipity 40$$boostset Serendipity 40"
+					Option "5x Set" "boostset Serendipity 40$$boostset Serendipity 40$$boostset Serendipity 40$$boostset Serendipity 40$$boostset Serendipity 40"
+				}
+				Menu "Gift of the Ancients (40)"
+				{
+					Option "1x Set" "boostset Gift_of_the_Ancients 40"
+					Option "3x Set" "boostset Gift_of_the_Ancients 40$$boostset Gift_of_the_Ancients 40$$boostset Gift_of_the_Ancients 40"
+					Option "5x Set" "boostset Gift_of_the_Ancients 40$$boostset Gift_of_the_Ancients 40$$boostset Gift_of_the_Ancients 40$$boostset Gift_of_the_Ancients 40$$boostset Gift_of_the_Ancients 40"
+					Option "Def/7.5% Increased Run Speed" "boost Crafted_Gift_of_the_Ancients_F Crafted_Gift_of_the_Ancients_F 40"
+				}
+				Menu "Red Fortune (50)"
+				{
+					Option "1x Set" "boostset Red_Fortune 50"
+					Option "3x Set" "boostset Red_Fortune 50$$boostset Red_Fortune 50$$boostset Red_Fortune 50"
+					Option "5x Set" "boostset Red_Fortune 50$$boostset Red_Fortune 50$$boostset Red_Fortune 50$$boostset Red_Fortune 50$$boostset Red_Fortune 50"
+				}
+				Menu "Luck of the Gambler (50)"
+				{
+					Option "1x Set" "boostset Luck_of_the_Gambler 50"
+					Option "3x Set" "boostset Luck_of_the_Gambler 50$$boostset Luck_of_the_Gambler 50$$boostset Luck_of_the_Gambler 50"
+					Option "5x Set" "boostset Luck_of_the_Gambler 50$$boostset Luck_of_the_Gambler 50$$boostset Luck_of_the_Gambler 50$$boostset Luck_of_the_Gambler 50$$boostset Luck_of_the_Gambler 50"
+					Option "Def/ 7.5% Recharge Time" "boost Crafted_Luck_of_the_Gambler_F Crafted_Luck_of_the_Gambler_F 50"
+				}
+				Menu "Reactive Defenses (50)"
+				{
+					Option "1x Set" "boostset Reactive_Defenses 50"
+					Option "3x Set" "boostset Reactive_Defenses 50$$boostset Reactive_Defenses 50$$boostset Reactive_Defenses 50"
+					Option "5x Set" "boostset Reactive_Defenses 50$$boostset Reactive_Defenses 50$$boostset Reactive_Defenses 50$$boostset Reactive_Defenses 50$$boostset Reactive_Defenses 50"
+					Option "Scaling Damage Resistance (3% - 13%)" "boost Crafted_Reactive_Defenses_F Crafted_Reactive_Defenses_F 50"
+				}
+				Menu "Shield Wall (50)"
+				{
+					Option "1x Set" "boostset Shield_Wall 50"
+					Option "3x Set" "boostset Shield_Wall 50$$boostset Shield_Wall 50$$boostset Shield_Wall 50"
+					Option "5x Set" "boostset Shield_Wall 50$$boostset Shield_Wall 50$$boostset Shield_Wall 50$$boostset Shield_Wall 50$$boostset Shield_Wall 50"
+					Option "Mag 1 TP Protection, +5% Res(all)" "boost Crafted_Shield_Wall_F Crafted_Shield_Wall_F 50"
+				}
+			}
+			Menu "Resist Damage"
+			{
+				Menu "Steadfast Protection (30)"
+				{
+					Option "1x Set" "boostset Steadfast_Protection 30"
+					Option "3x Set" "boostset Steadfast_Protection 30$$boostset Steadfast_Protection 30$$boostset Steadfast_Protection 30"
+					Option "5x Set" "boostset Steadfast_Protection 30$$boostset Steadfast_Protection 30$$boostset Steadfast_Protection 30$$boostset Steadfast_Protection 30$$boostset Steadfast_Protection 30"
+					Option "Mag 4 Knockback Protection" "boost Crafted_Steadfast_Protection_C Crafted_Steadfast_Protection_C 30"
+				}
+				Menu "Impervious Skin (30)"
+				{
+					Option "1x Set" "boostset Impervious_Skin 30"
+					Option "3x Set" "boostset Impervious_Skin 30$$boostset Impervious_Skin 30$$boostset Impervious_Skin 30"
+					Option "5x Set" "boostset Impervious_Skin 30$$boostset Impervious_Skin 30$$boostset Impervious_Skin 30$$boostset Impervious_Skin 30$$boostset Impervious_Skin 30"
+					Option "7.5% Mez Resist" "boost Crafted_Impervious_Skin_E Crafted_Impervious_Skin_E 30"
+				}
+				Menu "Reactive Armor (40)"
+				{
+					Option "1x Set" "boostset Reactive_Armor 40"
+					Option "3x Set" "boostset Reactive_Armor 40$$boostset Reactive_Armor 40$$boostset Reactive_Armor 40"
+					Option "5x Set" "boostset Reactive_Armor 40$$boostset Reactive_Armor 40$$boostset Reactive_Armor 40$$boostset Reactive_Armor 40$$boostset Reactive_Armor 40"
+				}
+				Menu "Impervium Armor (40)"
+				{
+					Option "1x Set" "boostset Impervium_Armor 40"
+					Option "3x Set" "boostset Impervium_Armor 40$$boostset Impervium_Armor 40$$boostset Impervium_Armor 40"
+					Option "5x Set" "boostset Impervium_Armor 40$$boostset Impervium_Armor 40$$boostset Impervium_Armor 40$$boostset Impervium_Armor 40$$boostset Impervium_Armor 40"
+					Option "+6% Psionic Resist" "boost Crafted_Impervium_Armor_F Crafted_Impervium_Armor_F 40"
+				}
+				Menu "Titanium Coating (50)"
+				{
+					Option "1x Set" "boostset Titanium_Coating 50"
+					Option "3x Set" "boostset Titanium_Coating 50$$boostset Titanium_Coating 50$$boostset Titanium_Coating 50"
+					Option "5x Set" "boostset Titanium_Coating 50$$boostset Titanium_Coating 50$$boostset Titanium_Coating 50$$boostset Titanium_Coating 50$$boostset Titanium_Coating 50"
+				}
+				Menu "Aegis (50)"
+				{
+					Option "1x Set" "boostset Aegis 50"
+					Option "3x Set" "boostset Aegis 50$$boostset Aegis 50$$boostset Aegis 50"
+					Option "5x Set" "boostset Aegis 50$$boostset Aegis 50$$boostset Aegis 50$$boostset Aegis 50$$boostset Aegis 50"
+					Option "+5% Psionic +20% Res Mez" "boost Crafted_Aegis_F Crafted_Aegis_F 50"
+				}
+				Menu "Unbreakable Guard (50)"
+				{
+					Option "1x Set" "boostset Unbreakable_Guard 50"
+					Option "3x Set" "boostset Unbreakable_Guard 50$$boostset Unbreakable_Guard 50$$boostset Unbreakable_Guard 50"
+					Option "5x Set" "boostset Unbreakable_Guard 50$$boostset Unbreakable_Guard 50$$boostset Unbreakable_Guard 50$$boostset Unbreakable_Guard 50$$boostset Unbreakable_Guard 50"
+					Option "+7.5% Health" "boost Crafted_Unbreakable_Guard_F Crafted_Unbreakable_Guard_F 50"
+				}
+				Menu "Gladiator's Armor (50)"
+				{
+					Option "1x Set" "boostset Gladiators_Armor 50"
+					Option "3x Set" "boostset Gladiators_Armor 50$$boostset Gladiators_Armor 50$$boostset Gladiators_Armor 50"
+					Option "5x Set" "boostset Gladiators_Armor 50$$boostset Gladiators_Armor 50$$boostset Gladiators_Armor 50$$boostset Gladiators_Armor 50$$boostset Gladiators_Armor 50"
+					Option "TP Protection, +3% Def(all)" "boost Crafted_Gladiators_Armor_F Crafted_Gladiators_Armor_F 50"
+				}
+			}
+		}
+		Menu "Pets"
+		{
+			Menu "Recharge Intensive Pets"
+			{
+				Menu "Call to Arms (30)"
+				{
+					Option "1x Set" "boostset Call_to_Arms 30"
+					Option "3x Set" "boostset Call_to_Arms 30$$boostset Call_to_Arms 30$$boostset Call_to_Arms 30"
+					Option "5x Set" "boostset Call_to_Arms 30$$boostset Call_to_Arms 30$$boostset Call_to_Arms 30$$boostset Call_to_Arms 30$$boostset Call_to_Arms 30"
+					Option "Defense Bonus Aura for Pets" "boost Crafted_Call_to_Arms_F Crafted_Call_to_Arms_F 30"
+				}
+				Menu "Expedient Reinforcement (50)"
+				{
+					Option "1x Set" "boostset Expedient_Reinforcement 50"
+					Option "3x Set" "boostset Expedient_Reinforcement 50$$boostset Expedient_Reinforcement 50$$boostset Expedient_Reinforcement 50"
+					Option "5x Set" "boostset Expedient_Reinforcement 50$$boostset Expedient_Reinforcement 50$$boostset Expedient_Reinforcement 50$$boostset Expedient_Reinforcement 50$$boostset Expedient_Reinforcement 50"
+					Option "Resist Bonus Aura for Pets" "boost Crafted_Expedient_Reinforcement_F Crafted_Expedient_Reinforcement_F 50"
+				}
+			}
+			Menu "Unquestioning Loyalty (30)"
+			{
+				Option "1x Set" "boostset Unquestioning_Loyalty 30"
+				Option "3x Set" "boostset Unquestioning_Loyalty 30$$boostset Unquestioning_Loyalty 30$$boostset Unquestioning_Loyalty 30"
+				Option "5x Set" "boostset Unquestioning_Loyalty 30$$boostset Unquestioning_Loyalty 30$$boostset Unquestioning_Loyalty 30$$boostset Unquestioning_Loyalty 30$$boostset Unquestioning_Loyalty 30"
+			}
+			Menu "Commanding Presence (30)"
+			{
+				Option "1x Set" "boostset Commanding_Presence 30"
+				Option "3x Set" "boostset Commanding_Presence 30$$boostset Commanding_Presence 30$$boostset Commanding_Presence 30"
+				Option "5x Set" "boostset Commanding_Presence 30$$boostset Commanding_Presence 30$$boostset Commanding_Presence 30$$boostset Commanding_Presence 30$$boostset Commanding_Presence 30"
+				Option "Aura Resist(Taunt, Placate) for Pets" "boost Crafted_Commanding_Presence_F Crafted_Commanding_Presence_F 30"
+			}
+			Menu "Brilliant Leadership (40)"
+			{
+				Option "1x Set" "boostset Brilliant_Leadership 40"
+				Option "3x Set" "boostset Brilliant_Leadership 40$$boostset Brilliant_Leadership 40$$boostset Brilliant_Leadership 40"
+				Option "5x Set" "boostset Brilliant_Leadership 40$$boostset Brilliant_Leadership 40$$boostset Brilliant_Leadership 40$$boostset Brilliant_Leadership 40$$boostset Brilliant_Leadership 40"
+			}
+			Menu "Edict of the Master (40)"
+			{
+				Option "1x Set" "boostset Edict_of_the_Master 40"
+				Option "3x Set" "boostset Edict_of_the_Master 40$$boostset Edict_of_the_Master 40$$boostset Edict_of_the_Master 40"
+				Option "5x Set" "boostset Edict_of_the_Master 40$$boostset Edict_of_the_Master 40$$boostset Edict_of_the_Master 40$$boostset Edict_of_the_Master 40$$boostset Edict_of_the_Master 40"
+				Option "Aura +Defense for Pets" "boost Crafted_Edict_of_the_Master_F Crafted_Edict_of_the_Master_F 40"
+			}
+			Menu "Blood Mandate (50)"
+			{
+				Option "1x Set" "boostset Blood_Mandate 50"
+				Option "3x Set" "boostset Blood_Mandate 50$$boostset Blood_Mandate 50$$boostset Blood_Mandate 50"
+				Option "5x Set" "boostset Blood_Mandate 50$$boostset Blood_Mandate 50$$boostset Blood_Mandate 50$$boostset Blood_Mandate 50$$boostset Blood_Mandate 50"
+			}
+			Menu "Sovereign Right (50)"
+			{
+				Option "1x Set" "boostset Sovereign_Right 50"
+				Option "3x Set" "boostset Sovereign_Right 50$$boostset Sovereign_Right 50$$boostset Sovereign_Right 50"
+				Option "5x Set" "boostset Sovereign_Right 50$$boostset Sovereign_Right 50$$boostset Sovereign_Right 50$$boostset Sovereign_Right 50$$boostset Sovereign_Right 50"
+				Option "Aura +Resistance(All) for Pets" "boost Crafted_Sovereign_Right_F Crafted_Sovereign_Right_F 50"
+			}
+			Menu "Soulbound Allegiance (50)"
+			{
+				Option "1x Set" "boostset Soulbound_Allegiance 50"
+				Option "3x Set" "boostset Soulbound_Allegiance 50$$boostset Soulbound_Allegiance 50$$boostset Soulbound_Allegiance 50"
+				Option "5x Set" "boostset Soulbound_Allegiance 50$$boostset Soulbound_Allegiance 50$$boostset Soulbound_Allegiance 50$$boostset Soulbound_Allegiance 50$$boostset Soulbound_Allegiance 50"
+				Option "Chance for Build Up" "boost Crafted_Soulbound_Allegiance_F Crafted_Soulbound_Allegiance_F 50"
+			}
+		}
+		Menu "Healing"
+		{
+			Menu "Accurate Healing"
+			{
+				Menu "Theft of Essence (30)"
+				{
+					Option "1x Set" "boostset Theft_of_Essence 30"
+					Option "3x Set" "boostset Theft_of_Essence 30$$boostset Theft_of_Essence 30$$boostset Theft_of_Essence 30"
+					Option "5x Set" "boostset Theft_of_Essence 30$$boostset Theft_of_Essence 30$$boostset Theft_of_Essence 30$$boostset Theft_of_Essence 30$$boostset Theft_of_Essence 30"
+					Option "Chance for +End" "boost Crafted_Theft_of_Essence_F Crafted_Theft_of_Essence_F 30"
+				}
+				Menu "Touch of the Nictus (50)"
+				{
+					Option "1x Set" "boostset Touch_of_the_Nictus 50"
+					Option "3x Set" "boostset Touch_of_the_Nictus 50$$boostset Touch_of_the_Nictus 50$$boostset Touch_of_the_Nictus 50"
+					Option "5x Set" "boostset Touch_of_the_Nictus 50$$boostset Touch_of_the_Nictus 50$$boostset Touch_of_the_Nictus 50$$boostset Touch_of_the_Nictus 50$$boostset Touch_of_the_Nictus 50"
+					Option "Chance for NE damage" "boost Crafted_Touch_of_the_Nictus_F Crafted_Touch_of_the_Nictus_F 50"
+				}
+			}
+			Menu "Triage (30)"
+			{
+				Option "1x Set" "boostset Triage 30"
+				Option "3x Set" "boostset Triage 30$$boostset Triage 30$$boostset Triage 30"
+				Option "5x Set" "boostset Triage 30$$boostset Triage 30$$boostset Triage 30$$boostset Triage 30$$boostset Triage 30"
+
+			}
+			Menu "Regenerative Tissue (30)"
+			{
+				Option "1x Set" "boostset Regenerative_Tissue 30"
+				Option "3x Set" "boostset $$boostset $$boostset "
+				Option "5x Set" "boostset $$boostset $$boostset $$boostset $$boostset "
+				Option "25% Regeneration" "boost Crafted_Regenerative_Tissue_E Crafted_Regenerative_Tissue_E 30"
+			}
+			Menu "Harmonized Healing (40)"
+			{
+				Option "1x Set" "boostset Harmonized_Healing 40"
+				Option "3x Set" "boostset Harmonized_Healing 40$$boostset Harmonized_Healing 40$$boostset Harmonized_Healing 40"
+				Option "5x Set" "boostset Harmonized_Healing 40$$boostset Harmonized_Healing 40$$boostset Harmonized_Healing 40$$boostset Harmonized_Healing 40$$boostset Harmonized_Healing 40"
+
+			}
+			Menu "Miracle (40)"
+			{
+				Option "1x Set" "boostset Miracle 40"
+				Option "3x Set" "boostset Miracle 40$$boostset Miracle 40$$boostset Miracle 40"
+				Option "5x Set" "boostset Miracle 40$$boostset Miracle 40$$boostset Miracle 40$$boostset Miracle 40$$boostset Miracle 40"
+				Option "15% Recovery" "boost Crafted_Miracle_F Crafted_Miracle_F 40"
+			}
+			Menu "Doctored Wounds (50)"
+			{
+				Option "1x Set" "boostset Doctored_Wounds 50"
+				Option "3x Set" "boostset Doctored_Wounds 50$$boostset Doctored_Wounds 50$$boostset Doctored_Wounds 50"
+				Option "5x Set" "boostset Doctored_Wounds 50$$boostset Doctored_Wounds 50$$boostset Doctored_Wounds 50$$boostset Doctored_Wounds 50$$boostset Doctored_Wounds 50"
+			}
+			Menu "Numina's Convalesence (50)"
+			{
+				Option "1x Set" "boostset Numinas_Convalesence 50"
+				Option "3x Set" "boostset Numinas_Convalesence 50$$boostset Numinas_Convalesence 50$$boostset Numinas_Convalesence 50"
+				Option "5x Set" "boostset Numinas_Convalesence 50$$boostset Numinas_Convalesence 50$$boostset Numinas_Convalesence 50$$boostset Numinas_Convalesence 50$$boostset Numinas_Convalesence 50"
+				Option "10% Recovery and 10% Regeneration" "boost Crafted_Numinas_Convalesence_F Crafted_Numinas_Convalesence_F 50"
+			}
+			Menu "Preventive Medicine (50)"
+			{
+				Option "1x Set" "boostset Preventive_Medicine 50"
+				Option "3x Set" "boostset Preventive_Medicine 50$$boostset Preventive_Medicine 50$$boostset Preventive_Medicine 50"
+				Option "5x Set" "boostset Preventive_Medicine 50$$boostset Preventive_Medicine 50$$boostset Preventive_Medicine 50$$boostset Preventive_Medicine 50$$boostset Preventive_Medicine 50"
+				Option "Chance for +Absorb" "boost Crafted_Preventive_Medicine_F Crafted_Preventive_Medicine_F 50"
+			}
+			Menu "Panacea (50)"
+			{
+				Option "1x Set" "boostset Panacea 50"
+				Option "3x Set" "boostset Panacea 50$$boostset Panacea 50$$boostset Panacea 50"
+				Option "5x Set" "boostset Panacea 50$$boostset Panacea 50$$boostset Panacea 50$$boostset Panacea 50$$boostset Panacea 50"
+				Option "Chance for +HP and + End" "boost Crafted_Panacea_F Crafted_Panacea_F 50"
+			}
+		}
+		Menu "Debuffs"
+		{
+			Menu "Defense Debuff"
+			{
+				Menu "Accurate Defense Debuff"
+				{
+					Menu "Shield Breaker (30)"
+					{
+						Option "1x Set" "boostset Shield_Breaker 30"
+						Option "3x Set" "boostset Shield_Breaker 30$$boostset Shield_Breaker 30$$boostset Shield_Breaker 30"
+						Option "5x Set" "boostset Shield_Breaker 30$$boostset Shield_Breaker 30$$boostset Shield_Breaker 30$$boostset Shield_Breaker 30$$boostset Shield_Breaker 30"
+						Option "Chance for Lethal Damage" "boost Crafted_Shield_Breaker_F Crafted_Shield_Breaker_F 30"
+					}
+					Menu "Analyze Weakness (50)"
+					{
+						Option "1x Set" "boostset Analyze_Weakness 50"
+						Option "3x Set" "boostset Analyze_Weakness 50$$boostset Analyze_Weakness 50$$boostset Analyze_Weakness 50"
+						Option "5x Set" "boostset Analyze_Weakness 50$$boostset Analyze_Weakness 50$$boostset Analyze_Weakness 50$$boostset Analyze_Weakness 50$$boostset Analyze_Weakness 50"
+						Option "Chance for +ToHit" "boost Crafted_Analyze_Weakness_F Crafted_Analyze_Weakness_F 50"
+					}
+				}
+				Menu "Exploited Vulnerability (20)"
+				{
+					Option "1x Set" "boostset Exploited_Vulnerability 20"
+					Option "3x Set" "boostset Exploited_Vulnerability 20$$boostset Exploited_Vulnerability 20$$boostset Exploited_Vulnerability 20"
+					Option "5x Set" "boostset Exploited_Vulnerability 20$$boostset Exploited_Vulnerability 20$$boostset Exploited_Vulnerability 20$$boostset Exploited_Vulnerability 20$$boostset Exploited_Vulnerability 20"
+				}
+				Menu "Achilles' Heel (20)"
+				{
+					Option "1x Set" "boostset Achilles_Heel 20"
+					Option "3x Set" "boostset $$boostset $$boostset "
+					Option "5x Set" "boostset $$boostset $$boostset $$boostset $$boostset "
+					Option "Chance for Resistance Debuff" "boost Crafted_Achilles_Heel_C Crafted_Achilles_Heel_C 20"
+				}
+				Menu "Undermined Defenses (50)"
+				{
+					Option "1x Set" "boostset Undermined_Defenses 50"
+					Option "3x Set" "boostset Undermined_Defenses 50$$boostset Undermined_Defenses 50$$boostset Undermined_Defenses 50"
+					Option "5x Set" "boostset Undermined_Defenses 50$$boostset Undermined_Defenses 50$$boostset Undermined_Defenses 50$$boostset Undermined_Defenses 50$$boostset Undermined_Defenses 50"
+				}
+				Menu "Touch of Lady Grey (50)"
+				{
+					Option "1x Set" "boostset Touch_of_Lady_Grey 50"
+					Option "3x Set" "boostset Touch_of_Lady_Grey 50$$boostset Touch_of_Lady_Grey 50$$boostset Touch_of_Lady_Grey 50"
+					Option "5x Set" "boostset Touch_of_Lady_Grey 50$$boostset Touch_of_Lady_Grey 50$$boostset Touch_of_Lady_Grey 50$$boostset Touch_of_Lady_Grey 50$$boostset Touch_of_Lady_Grey 50"
+					Option "Chance for Negative Energy Dam" "boost Crafted_Touch_of_Lady_Grey_F Crafted_Touch_of_Lady_Grey_F 50"
+				}
+			}
+			Menu "To Hit Debuff"
+			{
+				Menu "Accurate To Hit Debuff"
+				{
+					Menu "Cloud Senses (30)"
+					{
+						Option "1x Set" "boostset Cloud_Senses 30"
+						Option "3x Set" "boostset Cloud_Senses 30$$boostset Cloud_Senses 30$$boostset Cloud_Senses 30"
+						Option "5x Set" "boostset Cloud_Senses 30$$boostset Cloud_Senses 30$$boostset Cloud_Senses 30$$boostset Cloud_Senses 30$$boostset Cloud_Senses 30"
+						Option "Chance for Negative Energy Dam" "boost Crafted_Cloud_Senses_F Crafted_Cloud_Senses_F 30"
+					}
+					Menu "Siphon Insight (50)"
+					{
+						Option "1x Set" "boostset Siphon_Insight 50"
+						Option "3x Set" "boostset Siphon_Insight 50$$boostset Siphon_Insight 50$$boostset Siphon_Insight 50"
+						Option "5x Set" "boostset Siphon_Insight 50$$boostset Siphon_Insight 50$$boostset Siphon_Insight 50$$boostset Siphon_Insight 50$$boostset Siphon_Insight 50"
+						Option "Chance for +ToHit" "boost Crafted_Siphon_Insight_F Crafted_Siphon_Insight_F 50"
+					}
+				}
+				Menu "Discouraging Words (20)"
+				{
+					Option "1x Set" "boostset Discouraging_Words 20"
+					Option "3x Set" "boostset Discouraging_Words 20$$boostset Discouraging_Words 20$$boostset Discouraging_Words 20"
+					Option "5x Set" "boostset Discouraging_Words 20$$boostset Discouraging_Words 20$$boostset Discouraging_Words 20$$boostset Discouraging_Words 20$$boostset Discouraging_Words 20"
+				}
+				Menu "Deflated Ego (20)"
+				{
+					Option "1x Set" "boostset Deflated_Ego 20"
+					Option "3x Set" "boostset Deflated_Ego 20$$boostset Deflated_Ego 20$$boostset Deflated_Ego 20"
+					Option "5x Set" "boostset Deflated_Ego 20$$boostset Deflated_Ego 20$$boostset Deflated_Ego 20$$boostset Deflated_Ego 20$$boostset Deflated_Ego 20"
+					Option "Chance for Recovery Debuff" "boost Crafted_Deflated_Ego_C Crafted_Deflated_Ego_C 20"
+				}
+				Menu "Dampened Spirits (50)"
+				{
+					Option "1x Set" "boostset Dampened_Spirits 50"
+					Option "3x Set" "boostset Dampened_Spirits 50$$boostset Dampened_Spirits 50$$boostset Dampened_Spirits 50"
+					Option "5x Set" "boostset Dampened_Spirits 50$$boostset Dampened_Spirits 50$$boostset Dampened_Spirits 50$$boostset Dampened_Spirits 50$$boostset Dampened_Spirits 50"
+				}
+				Menu "Dark Watcher's Despair (50)"
+				{
+					Option "1x Set" "boostset Dark_Watchers_Despair 50"
+					Option "3x Set" "boostset Dark_Watchers_Despair 50$$boostset Dark_Watchers_Despair 50$$boostset Dark_Watchers_Despair 50"
+					Option "5x Set" "boostset Dark_Watchers_Despair 50$$boostset Dark_Watchers_Despair 50$$boostset Dark_Watchers_Despair 50$$boostset Dark_Watchers_Despair 50$$boostset Dark_Watchers_Despair 50"
+					Option "Chance for Recharge Slow" "boost Crafted_Dark_Watchers_Despair_F Crafted_Dark_Watchers_Despair_F 50"
+				}
+			}
+		}
+		Menu "Control"
+		{
+			Menu "Confuse"
+			{
+				Menu "Befuddling Aura (30)"
+				{
+					Option "1x Set" "boostset Befuddling_Aura 30"
+					Option "3x Set" "boostset Befuddling_Aura 30$$boostset Befuddling_Aura 30$$boostset Befuddling_Aura 30"
+					Option "5x Set" "boostset Befuddling_Aura 30$$boostset Befuddling_Aura 30$$boostset Befuddling_Aura 30$$boostset Befuddling_Aura 30$$boostset Befuddling_Aura 30"
+				}
+				Menu "Cacophany (30)"
+				{
+					Option "1x Set" "boostset Cacophany 30"
+					Option "3x Set" "boostset Cacophany 30$$boostset Cacophany 30$$boostset Cacophany 30"
+					Option "5x Set" "boostset Cacophany 30$$boostset Cacophany 30$$boostset Cacophany 30$$boostset Cacophany 30$$boostset Cacophany 30"
+					Option "Chance for Energy Damage" "boost Crafted_Cacophany_F Crafted_Cacophany_F 30"
+				}
+				Menu "Perplex (50)"
+				{
+					Option "1x Set" "boostset Perplex 50"
+					Option "3x Set" "boostset Perplex 50$$boostset Perplex 50$$boostset Perplex 50"
+					Option "5x Set" "boostset Perplex 50$$boostset Perplex 50$$boostset Perplex 50$$boostset Perplex 50$$boostset Perplex 50"
+				}
+				Menu "Malaise's Illusions (50)"
+				{
+					Option "1x Set" "boostset Malaises_Illusions 50"
+					Option "3x Set" "boostset Malaises_Illusions 50$$boostset Malaises_Illusions 50$$boostset Malaises_Illusions 50"
+					Option "5x Set" "boostset Malaises_Illusions 50$$boostset Malaises_Illusions 50$$boostset Malaises_Illusions 50$$boostset Malaises_Illusions 50$$boostset Malaises_Illusions 50"
+					Option "Chance for Psionic Damage" "boost Crafted_Malaises_Illusions_F Crafted_Malaises_Illusions_F 50"
+				}
+				Menu "Coercive Persuasion (50)"
+				{
+					Option "1x Set" "boostset Coercive_Persuasion 50"
+					Option "3x Set" "boostset Coercive_Persuasion 50$$boostset Coercive_Persuasion 50$$boostset Coercive_Persuasion 50"
+					Option "5x Set" "boostset Coercive_Persuasion 50$$boostset Coercive_Persuasion 50$$boostset Coercive_Persuasion 50$$boostset Coercive_Persuasion 50$$boostset Coercive_Persuasion 50"
+					Option "Contagious Confusion" "boost Crafted_Coercive_Persuasion_F Crafted_Coercive_Persuasion_F 50"
+				}
+			}
+			Menu "Fear"
+			{
+				Menu "Horror (30)"
+				{
+					Option "1x Set" "boostset Horror 30"
+					Option "3x Set" "boostset Horror 30$$boostset Horror 30$$boostset Horror 30"
+					Option "5x Set" "boostset Horror 30$$boostset Horror 30$$boostset Horror 30$$boostset Horror 30$$boostset Horror 30"
+				}
+				Menu "Unspeakable Terror (30)"
+				{
+					Option "1x Set" "boostset Unspeakable_Terror 30"
+					Option "3x Set" "boostset Unspeakable_Terror 30$$boostset Unspeakable_Terror 30$$boostset Unspeakable_Terror 30"
+					Option "5x Set" "boostset Unspeakable_Terror 30$$boostset Unspeakable_Terror 30$$boostset Unspeakable_Terror 30$$boostset Unspeakable_Terror 30$$boostset Unspeakable_Terror 30"
+					Option "Chance for Disorient" "boost Crafted_Unspeakable_Terror_F Crafted_Unspeakable_Terror_F 30"
+				}
+				Menu "Nightmare (50)"
+				{
+					Option "1x Set" "boostset Nightmare 50"
+					Option "3x Set" "boostset Nightmare 50$$boostset Nightmare 50$$boostset Nightmare 50"
+					Option "5x Set" "boostset Nightmare 50$$boostset Nightmare 50$$boostset Nightmare 50$$boostset Nightmare 50$$boostset Nightmare 50"
+				}
+				Menu "Glimpse of the Abyss (50)"
+				{
+					Option "1x Set" "boostset Glimpse_of_the_Abyss 50"
+					Option "3x Set" "boostset Glimpse_of_the_Abyss 50$$boostset Glimpse_of_the_Abyss 50$$boostset Glimpse_of_the_Abyss 50"
+					Option "5x Set" "boostset Glimpse_of_the_Abyss 50$$boostset Glimpse_of_the_Abyss 50$$boostset Glimpse_of_the_Abyss 50$$boostset Glimpse_of_the_Abyss 50$$boostset Glimpse_of_the_Abyss 50"
+					Option "Chance for Psionic Damage" "boost Crafted_Glimpse_of_the_Abyss_F Crafted_Glimpse_of_the_Abyss_F 50"
+				}
+			}
+			Menu "Hold"
+			{
+				Menu "Paralytic (30)"
+				{
+					Option "1x Set" "boostset Paralytic 30"
+					Option "3x Set" "boostset Paralytic 30$$boostset Paralytic 30$$boostset Paralytic 30"
+					Option "5x Set" "boostset Paralytic 30$$boostset Paralytic 30$$boostset Paralytic 30$$boostset Paralytic 30$$boostset Paralytic 30"
+				}
+				Menu "Neuronic Shutdown (30)"
+				{
+					Option "1x Set" "boostset Neuronic_Shutdown 30"
+					Option "3x Set" "boostset Neuronic_Shutdown 30$$boostset Neuronic_Shutdown 30$$boostset Neuronic_Shutdown 30"
+					Option "5x Set" "boostset Neuronic_Shutdown 30$$boostset Neuronic_Shutdown 30$$boostset Neuronic_Shutdown 30$$boostset Neuronic_Shutdown 30$$boostset Neuronic_Shutdown 30"
+					Option "Chance for Psionic DoT" "boost Crafted_Neuronic_Shutdown_F Crafted_Neuronic_Shutdown_F 30"
+				}
+				Menu "Basilisk's Gaze (30)"
+				{
+					Option "1x Set" "boostset Basilisks_Gaze 30"
+					Option "3x Set" "boostset Basilisks_Gaze 30$$boostset Basilisks_Gaze 30$$boostset Basilisks_Gaze 30"
+					Option "5x Set" "boostset Basilisks_Gaze 30$$boostset Basilisks_Gaze 30$$boostset Basilisks_Gaze 30$$boostset Basilisks_Gaze 30$$boostset Basilisks_Gaze 30"
+					Option "Chance for -Recharge" "boost Crafted_Basilisks_Gaze_F Crafted_Basilisks_Gaze_F 30"
+				}
+				Menu "Essence of Curare (50)"
+				{
+					Option "1x Set" "boostset Essence_of_Curare 50"
+					Option "3x Set" "boostset Essence_of_Curare 50$$boostset Essence_of_Curare 50$$boostset Essence_of_Curare 50"
+					Option "5x Set" "boostset Essence_of_Curare 50$$boostset Essence_of_Curare 50$$boostset Essence_of_Curare 50$$boostset Essence_of_Curare 50$$boostset Essence_of_Curare 50"
+				}
+				Menu "Ghost Widow's Embrace (50)"
+				{
+					Option "1x Set" "boostset Ghost_Widows_Embrace 50"
+					Option "3x Set" "boostset Ghost_Widows_Embrace 50$$boostset Ghost_Widows_Embrace 50$$boostset Ghost_Widows_Embrace 50"
+					Option "5x Set" "boostset Ghost_Widows_Embrace 50$$boostset Ghost_Widows_Embrace 50$$boostset Ghost_Widows_Embrace 50$$boostset Ghost_Widows_Embrace 50$$boostset Ghost_Widows_Embrace 50"
+					Option "Chance for Psionic Damage" "boost Crafted_Ghost_Widows_Embrace_F Crafted_Ghost_Widows_Embrace_F 50"
+				}
+				Menu "Lockdown (50)"
+				{
+					Option "1x Set" "boostset Lockdown 50"
+					Option "3x Set" "boostset Lockdown 50$$boostset Lockdown 50$$boostset Lockdown 50"
+					Option "5x Set" "boostset Lockdown 50$$boostset Lockdown 50$$boostset Lockdown 50$$boostset Lockdown 50$$boostset Lockdown 50"
+					Option "Chance for Mag 2 Hold" "boost Crafted_Lockdown_F Crafted_Lockdown_F 50"
+				}
+				Menu "Unbreakable Constraint (50)"
+				{
+					Option "1x Set" "boostset Unbreakable_Constraint 50"
+					Option "3x Set" "boostset Unbreakable_Constraint 50$$boostset Unbreakable_Constraint 50$$boostset Unbreakable_Constraint 50"
+					Option "5x Set" "boostset Unbreakable_Constraint 50$$boostset Unbreakable_Constraint 50$$boostset Unbreakable_Constraint 50$$boostset Unbreakable_Constraint 50$$boostset Unbreakable_Constraint 50"
+					Option "Chance for Smashing Dam" "boost Crafted_Unbreakable_Constraint_F Crafted_Unbreakable_Constraint_F 50"
+				}
+				Menu "Gladiator's Net (50)"
+				{
+					Option "1x Set" "boostset Gladiators_Net 50"
+					Option "3x Set" "boostset Gladiators_Net 50$$boostset Gladiators_Net 50$$boostset Gladiators_Net 50"
+					Option "5x Set" "boostset Gladiators_Net 50$$boostset Gladiators_Net 50$$boostset Gladiators_Net 50$$boostset Gladiators_Net 50$$boostset Gladiators_Net 50"
+					Option "Chance for Lethal Damage" "boost Crafted_Gladiators_Net_F Crafted_Gladiators_Net_F 50"
+				}
+				Menu "Entomb (50)"
+				{
+					Option "1x Set" "boostset Entomb 50"
+					Option "3x Set" "boostset Entomb 50$$boostset Entomb 50$$boostset Entomb 50"
+					Option "5x Set" "boostset Entomb 50$$boostset Entomb 50$$boostset Entomb 50$$boostset Entomb 50$$boostset Entomb 50"
+					Option "Rech/Chance for +Absorb" "boost Crafted_Entomb_F Crafted_Entomb_F 50"
+				}
+				Menu "Superior Entomb (50)"
+				{
+					Option "1x Set" "boostset Superior_Entomb 50"
+					Option "3x Set" "boostset Superior_Entomb 50$$boostset Superior_Entomb 50$$boostset Superior_Entomb 50"
+					Option "5x Set" "boostset Superior_Entomb 50$$boostset Superior_Entomb 50$$boostset Superior_Entomb 50$$boostset Superior_Entomb 50$$boostset Superior_Entomb 50"
+					Option "Rech/Chance for +Absorb" "boost Crafted_Superior_Entomb_F Crafted_Superior_Entomb_F 50"
+				}
+			}
+			Menu "Immobilize"
+			{
+				Menu "Rooting Grasp (30)"
+				{
+					Option "1x Set" "boostset Rooting_Grasp 30"
+					Option "3x Set" "boostset Rooting_Grasp 30$$boostset Rooting_Grasp 30$$boostset Rooting_Grasp 30"
+					Option "5x Set" "boostset Rooting_Grasp 30$$boostset Rooting_Grasp 30$$boostset Rooting_Grasp 30$$boostset Rooting_Grasp 30$$boostset Rooting_Grasp 30"
+				}
+				Menu "Debiliative Action (30)"
+				{
+					Option "1x Set" "boostset Debiliative_Action 30"
+					Option "3x Set" "boostset Debiliative_Action 30$$boostset Debiliative_Action 30$$boostset Debiliative_Action 30"
+					Option "5x Set" "boostset Debiliative_Action 30$$boostset Debiliative_Action 30$$boostset Debiliative_Action 30$$boostset Debiliative_Action 30$$boostset Debiliative_Action 30"
+					Option "Chance for Stun" "boost Crafted_Debiliative_Action_F Crafted_Debiliative_Action_F 30"
+				}
+				Menu "Enfeebled Operation (50)"
+				{
+					Option "1x Set" "boostset Enfeebled_Operation 50"
+					Option "3x Set" "boostset Enfeebled_Operation 50$$boostset Enfeebled_Operation 50$$boostset Enfeebled_Operation 50"
+					Option "5x Set" "boostset Enfeebled_Operation 50$$boostset Enfeebled_Operation 50$$boostset Enfeebled_Operation 50$$boostset Enfeebled_Operation 50$$boostset Enfeebled_Operation 50"
+				}
+				Menu "Trap of the Hunter (50)"
+				{
+					Option "1x Set" "boostset Trap_of_the_Hunter 50"
+					Option "3x Set" "boostset Trap_of_the_Hunter 50$$boostset Trap_of_the_Hunter 50$$boostset Trap_of_the_Hunter 50"
+					Option "5x Set" "boostset Trap_of_the_Hunter 50$$boostset Trap_of_the_Hunter 50$$boostset Trap_of_the_Hunter 50$$boostset Trap_of_the_Hunter 50$$boostset Trap_of_the_Hunter 50"
+					Option "Chance for Lethal Damage" "boost Crafted_Trap_of_the_Hunter_F Crafted_Trap_of_the_Hunter_F 50"
+				}
+				Menu "Gravitational Anchor (50)"
+				{
+					Option "1x Set" "boostset Gravitational_Anchor 50"
+					Option "3x Set" "boostset Gravitational_Anchor 50$$boostset Gravitational_Anchor 50$$boostset Gravitational_Anchor 50"
+					Option "5x Set" "boostset Gravitational_Anchor 50$$boostset Gravitational_Anchor 50$$boostset Gravitational_Anchor 50$$boostset Gravitational_Anchor 50$$boostset Gravitational_Anchor 50"
+					Option "Chance for Hold" "boost Crafted_Gravitational_Anchor_F Crafted_Gravitational_Anchor_F 50"
+				}
+			}
+			Menu "Knockback"
+			{
+				Menu "Volley of Velocity (20)"
+				{
+					Option "1x Set" "boostset Volley_of_Velocity 20"
+					Option "3x Set" "boostset Volley_of_Velocity 20$$boostset Volley_of_Velocity 20$$boostset Volley_of_Velocity 20"
+					Option "5x Set" "boostset Volley_of_Velocity 20$$boostset Volley_of_Velocity 20$$boostset Volley_of_Velocity 20$$boostset Volley_of_Velocity 20$$boostset Volley_of_Velocity 20"
+				}
+				Menu "Explosive Strike (20)"
+				{
+					Option "1x Set" "boostset Explosive_Strike 20"
+					Option "3x Set" "boostset Explosive_Strike 20$$boostset Explosive_Strike 20$$boostset Explosive_Strike 20"
+					Option "5x Set" "boostset Explosive_Strike 20$$boostset Explosive_Strike 20$$boostset Explosive_Strike 20$$boostset Explosive_Strike 20$$boostset Explosive_Strike 20"
+					Option "Chance for Smashing Dam" "boost Crafted_Explosive_Strike_C Crafted_Explosive_Strike_C 20"
+				}
+				Menu "Kinetic Crash (50)"
+				{
+					Option "1x Set" "boostset Kinetic_Crash 50"
+					Option "3x Set" "boostset Kinetic_Crash 50$$boostset Kinetic_Crash 50$$boostset Kinetic_Crash 50"
+					Option "5x Set" "boostset Kinetic_Crash 50$$boostset Kinetic_Crash 50$$boostset Kinetic_Crash 50$$boostset Kinetic_Crash 50$$boostset Kinetic_Crash 50"
+				}
+				Menu "Force Feedback (50)"
+				{
+					Option "1x Set" "boostset Force_Feedback 50"
+					Option "3x Set" "boostset Force_Feedback 50$$boostset Force_Feedback 50$$boostset Force_Feedback 50"
+					Option "5x Set" "boostset Force_Feedback 50$$boostset Force_Feedback 50$$boostset Force_Feedback 50$$boostset Force_Feedback 50$$boostset Force_Feedback 50"
+					Option "Chance for +Rech" "boost Crafted_Force_Feedback_F Crafted_Force_Feedback_F 50"
+				}
+				Menu "Sudden Acceleration (50)"
+				{
+					Option "1x Set" "boostset Sudden_Acceleration 50"
+					Option "3x Set" "boostset Sudden_Acceleration 50$$boostset Sudden_Acceleration 50$$boostset Sudden_Acceleration 50"
+					Option "5x Set" "boostset Sudden_Acceleration 50$$boostset Sudden_Acceleration 50$$boostset Sudden_Acceleration 50$$boostset Sudden_Acceleration 50$$boostset Sudden_Acceleration 50"
+					Option "Knockback to Knockdown" "boost Crafted_Sudden_Acceleration_F Crafted_Sudden_Acceleration_F 50"
+				}
+			}
+			Menu "Sleep"
+			{
+				Menu "Hibernation (30)"
+				{
+					Option "1x Set" "boostset Hibernation 30"
+					Option "3x Set" "boostset Hibernation 30$$boostset Hibernation 30$$boostset Hibernation 30"
+					Option "5x Set" "boostset Hibernation 30$$boostset Hibernation 30$$boostset Hibernation 30$$boostset Hibernation 30$$boostset Hibernation 30"
+				}
+				Menu "Induced Coma (30)"
+				{
+					Option "1x Set" "boostset Induced_Coma 30"
+					Option "3x Set" "boostset Induced_Coma 30$$boostset Induced_Coma 30$$boostset Induced_Coma 30"
+					Option "5x Set" "boostset Induced_Coma 30$$boostset Induced_Coma 30$$boostset Induced_Coma 30$$boostset Induced_Coma 30$$boostset Induced_Coma 30"
+					Option "Chance for Recharge Slow" "boost Crafted_Induced_Coma_F Crafted_Induced_Coma_F 30"
+				}
+				Menu "Lethargic Repose (50)"
+				{
+					Option "1x Set" "boostset Lethargic_Repose 30"
+					Option "3x Set" "boostset Lethargic_Repose 30$$boostset Lethargic_Repose 30$$boostset Lethargic_Repose 30"
+					Option "5x Set" "boostset Lethargic_Repose 30$$boostset Lethargic_Repose 30$$boostset Lethargic_Repose 30$$boostset Lethargic_Repose 30$$boostset Lethargic_Repose 30"
+				}
+				Menu "Call of the Sandman (50)"
+				{
+					Option "1x Set" "boostset Call_of_the_Sandman 50"
+					Option "3x Set" "boostset Call_of_the_Sandman 50$$boostset Call_of_the_Sandman 50$$boostset Call_of_the_Sandman 50"
+					Option "5x Set" "boostset Call_of_the_Sandman 50$$boostset Call_of_the_Sandman 50$$boostset Call_of_the_Sandman 50$$boostset Call_of_the_Sandman 50$$boostset Call_of_the_Sandman 50"
+					Option "Chance for Self Heal" "boost Crafted_Call_of_the_Sandman_F Crafted_Call_of_the_Sandman_F 50"
+				}
+				Menu "Fortunata Hypnosis (50)"
+				{
+					Option "1x Set" "boostset Fortunata_Hypnosis 50"
+					Option "3x Set" "boostset Fortunata_Hypnosis 50$$boostset Fortunata_Hypnosis 50$$boostset Fortunata_Hypnosis 50"
+					Option "5x Set" "boostset Fortunata_Hypnosis 50$$boostset Fortunata_Hypnosis 50$$boostset Fortunata_Hypnosis 50$$boostset Fortunata_Hypnosis 50$$boostset Fortunata_Hypnosis 50"
+					Option "Chance for Placate" "boost Crafted_Fortunata_Hypnosis_F Crafted_Fortunata_Hypnosis_F 50"
+				}
+			}
+			Menu "Slow"
+			{
+				Menu "Curtail Speed (30)"
+				{
+					Option "1x Set" "boostset Curtail_Speed 30"
+					Option "3x Set" "boostset Curtail_Speed 30$$boostset Curtail_Speed 30$$boostset Curtail_Speed 30"
+					Option "5x Set" "boostset Curtail_Speed 30$$boostset Curtail_Speed 30$$boostset Curtail_Speed 30$$boostset Curtail_Speed 30$$boostset Curtail_Speed 30"
+				}
+				Menu "Impeded Swiftness (30)"
+				{
+					Option "1x Set" "boostset Impeded_Swiftness 30"
+					Option "3x Set" "boostset Impeded_Swiftness 30$$boostset Impeded_Swiftness 30$$boostset Impeded_Swiftness 30"
+					Option "5x Set" "boostset Impeded_Swiftness 30$$boostset Impeded_Swiftness 30$$boostset Impeded_Swiftness 30$$boostset Impeded_Swiftness 30$$boostset Impeded_Swiftness 30"
+					Option "Chance for Smashing Damage" "boost Crafted_Impeded_Swiftness_F Crafted_Impeded_Swiftness_F 30"
+				}
+				Menu "Tempered Readiness (50)"
+				{
+					Option "1x Set" "boostset Tempered_Readiness 50"
+					Option "3x Set" "boostset Tempered_Readiness 50$$boostset Tempered_Readiness 50$$boostset Tempered_Readiness 50"
+					Option "5x Set" "boostset Tempered_Readiness 50$$boostset Tempered_Readiness 50$$boostset Tempered_Readiness 50$$boostset Tempered_Readiness 50$$boostset Tempered_Readiness 50"
+				}
+				Menu "Pacing of the Turtle (50)"
+				{
+					Option "1x Set" "boostset Pacing_of_the_Turtle 50"
+					Option "3x Set" "boostset Pacing_of_the_Turtle 50$$boostset Pacing_of_the_Turtle 50$$boostset Pacing_of_the_Turtle 50"
+					Option "5x Set" "boostset Pacing_of_the_Turtle 50$$boostset Pacing_of_the_Turtle 50$$boostset Pacing_of_the_Turtle 50$$boostset Pacing_of_the_Turtle 50$$boostset Pacing_of_the_Turtle 50"
+					Option "Chance for Recharge Slow" "boost Crafted_Pacing_of_the_Turtle_F Crafted_Pacing_of_the_Turtle_F 50"
+				}
+			}
+			Menu "Stun"
+			{
+				Menu "Stagger (30)"
+				{
+					Option "1x Set" "boostset Stagger 30"
+					Option "3x Set" "boostset Stagger 30$$boostset Stagger 30$$boostset Stagger 30"
+					Option "5x Set" "boostset Stagger 30$$boostset Stagger 30$$boostset Stagger 30$$boostset Stagger 30$$boostset Stagger 30"
+				}
+				Menu "Razzle Dazzle (30)"
+				{
+					Option "1x Set" "boostset Razzle_Dazzle 30"
+					Option "3x Set" "boostset Razzle_Dazzle 30$$boostset Razzle_Dazzle 30$$boostset Razzle_Dazzle 30"
+					Option "5x Set" "boostset Razzle_Dazzle 30$$boostset Razzle_Dazzle 30$$boostset Razzle_Dazzle 30$$boostset Razzle_Dazzle 30$$boostset Razzle_Dazzle 30"
+					Option "Chance for Immobilize" "boost Crafted_Razzle_Dazzle_F Crafted_Razzle_Dazzle_F 30"
+				}
+				Menu "Rope A Dope (50)"
+				{
+					Option "1x Set" "boostset Rope_A_Dope 50"
+					Option "3x Set" "boostset Rope_A_Dope 50$$boostset Rope_A_Dope 50$$boostset Rope_A_Dope 50"
+					Option "5x Set" "boostset Rope_A_Dope 50$$boostset Rope_A_Dope 50$$boostset Rope_A_Dope 50$$boostset Rope_A_Dope 50$$boostset Rope_A_Dope 50"
+				}
+				Menu "Stupefy (50)"
+				{
+					Option "1x Set" "boostset Stupefy 50"
+					Option "3x Set" "boostset Stupefy 50$$boostset Stupefy 50$$boostset Stupefy 50"
+					Option "5x Set" "boostset Stupefy 50$$boostset Stupefy 50$$boostset Stupefy 50$$boostset Stupefy 50$$boostset Stupefy 50"
+					Option "Chance for Knockback" "boost Crafted_Stupefy_F Crafted_Stupefy_F 50"
+				}
+				Menu "Absolute Amazement (50)"
+				{
+					Option "1x Set" "boostset Absolute_Amazement 50"
+					Option "3x Set" "boostset Absolute_Amazement 50$$boostset Absolute_Amazement 50$$boostset Absolute_Amazement 50"
+					Option "5x Set" "boostset Absolute_Amazement 50$$boostset Absolute_Amazement 50$$boostset Absolute_Amazement 50$$boostset Absolute_Amazement 50$$boostset Absolute_Amazement 50"
+					Option "Chance for ToHit Debuff" "boost Crafted_Absolute_Amazement_F Crafted_Absolute_Amazement_F 50"
+				}
+			}
+		}
+		Menu "Travel Sets"
+		{
+			Menu "Flight"
+			{
+				Menu "Soaring (50)"
+				{
+					Option "1x Set" "boostset Soaring 50"
+					Option "3x Set" "boostset Soaring 50$$boostset Soaring 50$$boostset Soaring 50"
+					Option "5x Set" "boostset Soaring 50$$boostset Soaring 50$$boostset Soaring 50$$boostset Soaring 50$$boostset Soaring 50"
+				}
+				Menu "Freebird (50)"
+				{
+					Option "1x Set" "boostset Freebird 50"
+					Option "3x Set" "boostset Freebird 50$$boostset Freebird 50$$boostset Freebird 50"
+					Option "5x Set" "boostset Freebird 50$$boostset Freebird 50$$boostset Freebird 50$$boostset Freebird 50$$boostset Freebird 50"
+					Option "+Stealth" "boost Crafted_Freebird_C Crafted_Freebird_C 50"
+				}
+			}
+			Menu "Leaping"
+			{
+				Menu "Springfoot (50)"
+				{
+					Option "1x Set" "boostset Springfoot 50"
+					Option "3x Set" "boostset Springfoot 50$$boostset Springfoot 50$$boostset Springfoot 50"
+					Option "5x Set" "boostset Springfoot 50$$boostset Springfoot 50$$boostset Springfoot 50$$boostset Springfoot 50$$boostset Springfoot 50"
+				}
+				Menu "Unbounded Leap (50)"
+				{
+					Option "1x Set" "boostset Unbounded_Leap 50"
+					Option "3x Set" "boostset Unbounded_Leap 50$$boostset Unbounded_Leap 50$$boostset Unbounded_Leap 50"
+					Option "5x Set" "boostset Unbounded_Leap 50$$boostset Unbounded_Leap 50$$boostset Unbounded_Leap 50$$boostset Unbounded_Leap 50$$boostset Unbounded_Leap 50"
+					Option "+Stealth" "boost Crafted_Unbounded_Leap_C Crafted_Unbounded_Leap_C 50"
+				}
+			}
+			Menu "Running"
+			{
+				Menu "Quickfoot (50)"
+				{
+					Option "1x Set" "boostset Quickfoot 50"
+					Option "3x Set" "boostset Quickfoot 50$$boostset Quickfoot 50$$boostset Quickfoot 50"
+					Option "5x Set" "boostset Quickfoot 50$$boostset Quickfoot 50$$boostset Quickfoot 50$$boostset Quickfoot 50$$boostset Quickfoot 50"
+				}
+				Menu "Celerity (50)"
+				{
+					Option "1x Set" "boostset Celerity 50"
+					Option "3x Set" "boostset Celerity 50$$boostset Celerity 50$$boostset Celerity 50"
+					Option "5x Set" "boostset Celerity 50$$boostset Celerity 50$$boostset Celerity 50$$boostset Celerity 50$$boostset Celerity 50"
+					Option "+Stealth" "boost Crafted_Celerity_C Crafted_Celerity_C 50"
+				}
+			}
+			Menu "Teleport"
+			{
+				Menu "Jaunt (50)"
+				{
+					Option "1x Set" "boostset Jaunt 50"
+					Option "3x Set" "boostset Jaunt 50$$boostset Jaunt 50$$boostset Jaunt 50"
+					Option "5x Set" "boostset Jaunt 50$$boostset Jaunt 50$$boostset Jaunt 50$$boostset Jaunt 50$$boostset Jaunt 50"
+				}
+				Menu "Time \& Space Manipulation 50 (50)"
+				{
+					Option "1x Set" "boostset Time_\&_Space_Manipulation 50"
+					Option "3x Set" "boostset Time_\&_Space_Manipulation 50$$boostset Time_\&_Space_Manipulation 50$$boostset Time_\&_Space_Manipulation 50"
+					Option "5x Set" "boostset Time_\&_Space_Manipulation 50$$boostset Time_\&_Space_Manipulation 50$$boostset Time_\&_Space_Manipulation 50$$boostset Time_\&_Space_Manipulation 50$$boostset Time_\&_Space_Manipulation 50"
+					Option "+Stealth" "boost Crafted_Time_\&_Space_Manipulation_C Crafted_Time_\&_Space_Manipulation_C 50"
+				}
+			}
+			Menu "Universal"
+			{
+				Menu "Blessing of the Zephyr (50)"
+				{
+					Option "1x Set" "boostset Blessing_of_the_Zephyr 50"
+					Option "3x Set" "boostset Blessing_of_the_Zephyr 50$$boostset Blessing_of_the_Zephyr 50$$boostset Blessing_of_the_Zephyr 50"
+					Option "5x Set" "boostset Blessing_of_the_Zephyr 50$$boostset Blessing_of_the_Zephyr 50$$boostset Blessing_of_the_Zephyr 50$$boostset Blessing_of_the_Zephyr 50$$boostset Blessing_of_the_Zephyr 50"
+					Option "Knockback Protection (Mag 4)" "boost Crafted_Blessing_of_the_Zephyr_C Crafted_Blessing_of_the_Zephyr_C 50"
+				}
+				Menu "Winter's Gift (50)"
+				{
+					Option "1x Set" "boostset Winters_Gift 50"
+					Option "3x Set" "boostset Winters_Gift 50$$boostset Winters_Gift 50$$boostset Winters_Gift 50"
+					Option "5x Set" "boostset Winters_Gift 50$$boostset Winters_Gift 50$$boostset Winters_Gift 50$$boostset Winters_Gift 50$$boostset Winters_Gift 50"
+					Option "Slow Resistance (20%)" "boost Crafted_Winters_Gift_C Crafted_Winters_Gift_C 50"
+				}
+			}
+		}
+		Menu "Other"
+		{
+			Menu "Endurance Modification"
+			{
+				Menu "Adrenal Adjustment (20)"
+				{
+					Option "1x Set" "boostset Adrenal_Adjustment 20"
+					Option "3x Set" "boostset Adrenal_Adjustment 20$$boostset Adrenal_Adjustment 20$$boostset Adrenal_Adjustment 20"
+					Option "5x Set" "boostset Adrenal_Adjustment 20$$boostset Adrenal_Adjustment 20$$boostset Adrenal_Adjustment 20$$boostset Adrenal_Adjustment 20$$boostset Adrenal_Adjustment 20"
+				}
+				Menu "Energy Manipulator (20)"
+				{
+					Option "1x Set" "boostset Energy_Manipulator 20"
+					Option "3x Set" "boostset Energy_Manipulator 20$$boostset Energy_Manipulator 20$$boostset Energy_Manipulator 20"
+					Option "5x Set" "boostset Energy_Manipulator 20$$boostset Energy_Manipulator 20$$boostset Energy_Manipulator 20$$boostset Energy_Manipulator 20$$boostset Energy_Manipulator 20"
+					Option "Chance to Disorient" "boost Crafted_Energy_Manipulator_C Crafted_Energy_Manipulator_C 20"
+				}
+				Menu "Efficacy Adaptor (50)"
+				{
+					Option "1x Set" "boostset Efficacy_Adaptor 50"
+					Option "3x Set" "boostset Efficacy_Adaptor 50$$boostset Efficacy_Adaptor 50$$boostset Efficacy_Adaptor 50"
+					Option "5x Set" "boostset Efficacy_Adaptor 50$$boostset Efficacy_Adaptor 50$$boostset Efficacy_Adaptor 50$$boostset Efficacy_Adaptor 50$$boostset Efficacy_Adaptor 50"
+				}
+				Menu "Performance Shifter (50)"
+				{
+					Option "1x Set" "boostset Performance_Shifter 50"
+					Option "3x Set" "boostset Performance_Shifter 50$$boostset Performance_Shifter 50$$boostset Performance_Shifter 50"
+					Option "5x Set" "boostset Performance_Shifter 50$$boostset Performance_Shifter 50$$boostset Performance_Shifter 50$$boostset Performance_Shifter 50$$boostset Performance_Shifter 50"
+					Option "Chance for +Endurance" "boost Crafted_Performance_Shifter_F Crafted_Performance_Shifter_F 50"
+				}
+			}
+			Menu "Taunt"
+			{
+				Menu "Annoyance (20)"
+				{
+					Option "1x Set" "boostset Annoyance 20"
+					Option "3x Set" "boostset Annoyance 20$$boostset Annoyance 20$$boostset Annoyance 20"
+					Option "5x Set" "boostset Annoyance 20$$boostset Annoyance 20$$boostset Annoyance 20$$boostset Annoyance 20$$boostset Annoyance 20"
+				}
+				Menu "Triumphant Insult (20)"
+				{
+					Option "1x Set" "boostset Triumphant_Insult 20"
+					Option "3x Set" "boostset Triumphant_Insult 20$$boostset Triumphant_Insult 20$$boostset Triumphant_Insult 20"
+					Option "5x Set" "boostset Triumphant_Insult 20$$boostset Triumphant_Insult 20$$boostset Triumphant_Insult 20$$boostset Triumphant_Insult 20$$boostset Triumphant_Insult 20"
+					Option "Chance to Disorient" "boost Crafted_Triumphant_Insult_C Crafted_Triumphant_Insult_C 20"
+				}
+				Menu "Mocking Beratement (50)"
+				{
+					Option "1x Set" "boostset Mocking_Beratement 50"
+					Option "3x Set" "boostset Mocking_Beratement 50$$boostset Mocking_Beratement 50$$boostset Mocking_Beratement 50"
+					Option "5x Set" "boostset Mocking_Beratement 50$$boostset Mocking_Beratement 50$$boostset Mocking_Beratement 50$$boostset Mocking_Beratement 50$$boostset Mocking_Beratement 50"
+				}
+				Menu "Perfect Zinger (50)"
+				{
+					Option "1x Set" "boostset Perfect_Zinger 50"
+					Option "3x Set" "boostset Perfect_Zinger 50$$boostset Perfect_Zinger 50$$boostset Perfect_Zinger 50"
+					Option "5x Set" "boostset Perfect_Zinger 50$$boostset Perfect_Zinger 50$$boostset Perfect_Zinger 50$$boostset Perfect_Zinger 50$$boostset Perfect_Zinger 50"
+					Option "Chance for Psi Dam" "boost Crafted_Perfect_Zinger_F Crafted_Perfect_Zinger_F 50"
+				}
+			}
+			Menu "To Hit Buff"
+			{
+				Menu "Encouraged Accuracy (20)"
+				{
+					Option "1x Set" "boostset Encouraged_Accuracy 20"
+					Option "3x Set" "boostset Encouraged_Accuracy 20$$boostset Encouraged_Accuracy 20$$boostset Encouraged_Accuracy 20"
+					Option "5x Set" "boostset Encouraged_Accuracy 20$$boostset Encouraged_Accuracy 20$$boostset Encouraged_Accuracy 20$$boostset Encouraged_Accuracy 20$$boostset Encouraged_Accuracy 20"
+
+				}
+				Menu "Rectified Reticle (20)"
+				{
+					Option "1x Set" "boostset Rectified_Reticle 20"
+					Option "3x Set" "boostset Rectified_Reticle 20$$boostset Rectified_Reticle 20$$boostset Rectified_Reticle 20"
+					Option "5x Set" "boostset Rectified_Reticle 20$$boostset Rectified_Reticle 20$$boostset Rectified_Reticle 20$$boostset Rectified_Reticle 20$$boostset Rectified_Reticle 20"
+					Option "Increased Perception" "boost Crafted_Rectified_Reticle_C Crafted_Rectified_Reticle_C 20"
+				}
+				Menu "Adjusted Targeting (50)"
+				{
+					Option "1x Set" "boostset Adjusted_Targeting 50"
+					Option "3x Set" "boostset Adjusted_Targeting 50$$boostset Adjusted_Targeting 50$$boostset Adjusted_Targeting 50"
+					Option "5x Set" "boostset Adjusted_Targeting 50$$boostset Adjusted_Targeting 50$$boostset Adjusted_Targeting 50$$boostset Adjusted_Targeting 50$$boostset Adjusted_Targeting 50"
+				}
+				Menu "Gaussian's Synchronized Fire-Control (50)"
+				{
+					Option "1x Set" "boostset Gaussians_Synchronized_Fire-Control 50"
+					Option "3x Set" "boostset Gaussians_Synchronized_Fire-Control 50$$boostset Gaussians_Synchronized_Fire-Control 50$$boostset Gaussians_Synchronized_Fire-Control 50"
+					Option "5x Set" "boostset Gaussians_Synchronized_Fire-Control 50$$boostset Gaussians_Synchronized_Fire-Control 50$$boostset Gaussians_Synchronized_Fire-Control 50$$boostset Gaussians_Synchronized_Fire-Control 50$$boostset Gaussians_Synchronized_Fire-Control 50"
+					Option "Chance for Build Up" "boost Crafted_Gaussians_Synchronized_Fire-Control_F Crafted_Gaussians_Synchronized_Fire-Control_F 50"
+				}
+			}
+		}
+	}
+	Menu "Basic IOs"
+	{
+		Menu "Accuracy (50)"
+		{
+			Option "1x" "boost Crafted_Accuracy Crafted_Accuracy 50"
+			Option "3x" "boost Crafted_Accuracy Crafted_Accuracy 50$$boost Crafted_Accuracy Crafted_Accuracy 50$$boost Crafted_Accuracy Crafted_Accuracy 50"
+			Option "5x" "boost Crafted_Accuracy Crafted_Accuracy 50$$boost Crafted_Accuracy Crafted_Accuracy 50$$boost Crafted_Accuracy Crafted_Accuracy 50$$boost Crafted_Accuracy Crafted_Accuracy 50$$boost Crafted_Accuracy Crafted_Accuracy 50"
+		}
+		Menu "Confuse (50)"
+		{
+			Option "1x" "boost Crafted_Confuse Crafted_Confuse 50"
+			Option "3x" "boost Crafted_Confuse Crafted_Confuse 50$$boost Crafted_Confuse Crafted_Confuse 50$$boost Crafted_Confuse Crafted_Confuse 50"
+			Option "5x" "boost Crafted_Confuse Crafted_Confuse 50$$boost Crafted_Confuse Crafted_Confuse 50$$boost Crafted_Confuse Crafted_Confuse 50$$boost Crafted_Confuse Crafted_Confuse 50$$boost Crafted_Confuse Crafted_Confuse 50"
+		}
+		Menu "Damage (50)"
+		{
+			Option "1x" "boost Crafted_Damage Crafted_Damage 50"
+			Option "3x" "boost Crafted_Damage Crafted_Damage 50$$boost Crafted_Damage Crafted_Damage 50$$boost Crafted_Damage Crafted_Damage 50"
+			Option "5x" "boost Crafted_Damage Crafted_Damage 50$$boost Crafted_Damage Crafted_Damage 50$$boost Crafted_Damage Crafted_Damage 50$$boost Crafted_Damage Crafted_Damage 50$$boost Crafted_Damage Crafted_Damage 50"
+		}
+		Menu "Defense Buff (50)"
+		{
+			Option "1x" "boost Crafted_Defense_Buff Crafted_Defense_Buff 50"
+			Option "3x" "boost Crafted_Defense_Buff Crafted_Defense_Buff 50$$boost Crafted_Defense_Buff Crafted_Defense_Buff 50$$boost Crafted_Defense_Buff Crafted_Defense_Buff 50"
+			Option "5x" "boost Crafted_Defense_Buff Crafted_Defense_Buff 50$$boost Crafted_Defense_Buff Crafted_Defense_Buff 50$$boost Crafted_Defense_Buff Crafted_Defense_Buff 50$$boost Crafted_Defense_Buff Crafted_Defense_Buff 50$$boost Crafted_Defense_Buff Crafted_Defense_Buff 50"
+		}
+		Menu "Defense DeBuff (50)"
+		{
+			Option "1x" "boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50"
+			Option "3x" "boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50$$boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50$$boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50"
+			Option "5x" "boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50$$boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50$$boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50$$boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50$$boost Crafted_Defense_DeBuff Crafted_Defense_DeBuff 50"
+		}
+		Menu "Endurance Modification (50)"
+		{
+			Option "1x" "boost Crafted_Recovery Crafted_Recovery 50"
+			Option "3x" "boost Crafted_Recovery Crafted_Recovery 50$$boost Crafted_Recovery Crafted_Recovery 50$$boost Crafted_Recovery Crafted_Recovery 50"
+			Option "5x" "boost Crafted_Recovery Crafted_Recovery 50$$boost Crafted_Recovery Crafted_Recovery 50$$boost Crafted_Recovery Crafted_Recovery 50$$boost Crafted_Recovery Crafted_Recovery 50$$boost Crafted_Recovery Crafted_Recovery 50"
+		}
+		Menu "Endurance Reduction (50)"
+		{
+			Option "1x" "boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50"
+			Option "3x" "boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50$$boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50$$boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50"
+			Option "5x" "boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50$$boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50$$boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50$$boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50$$boost Crafted_Endurance_Discount Crafted_Endurance_Discount 50"
+		}
+		Menu "Fear (50)"
+		{
+			Option "1x" "boost Crafted_Fear Crafted_Fear 50"
+			Option "3x" "boost Crafted_Fear Crafted_Fear 50$$boost Crafted_Fear Crafted_Fear 50$$boost Crafted_Fear Crafted_Fear 50"
+			Option "5x" "boost Crafted_Fear Crafted_Fear 50$$boost Crafted_Fear Crafted_Fear 50$$boost Crafted_Fear Crafted_Fear 50$$boost Crafted_Fear Crafted_Fear 50$$boost Crafted_Fear Crafted_Fear 50"
+		}
+		Menu "Fly (50)"
+		{
+			Option "1x" "boost Crafted_Fly Crafted_Fly 50"
+			Option "3x" "boost Crafted_Fly Crafted_Fly 50$$boost Crafted_Fly Crafted_Fly 50$$boost Crafted_Fly Crafted_Fly 50"
+			Option "5x" "boost Crafted_Fly Crafted_Fly 50$$boost Crafted_Fly Crafted_Fly 50$$boost Crafted_Fly Crafted_Fly 50$$boost Crafted_Fly Crafted_Fly 50$$boost Crafted_Fly Crafted_Fly 50"
+		}
+		Menu "Healing (50)"
+		{
+			Option "1x" "boost Crafted_Heal Crafted_Heal 50"
+			Option "3x" "boost Crafted_Heal Crafted_Heal 50$$boost Crafted_Heal Crafted_Heal 50$$boost Crafted_Heal Crafted_Heal 50"
+			Option "5x" "boost Crafted_Heal Crafted_Heal 50$$boost Crafted_Heal Crafted_Heal 50$$boost Crafted_Heal Crafted_Heal 50$$boost Crafted_Heal Crafted_Heal 50$$boost Crafted_Heal Crafted_Heal 50"
+		}
+		Menu "Hold (50)"
+		{
+			Option "1x" "boost Crafted_Hold Crafted_Hold 50"
+			Option "3x" "boost Crafted_Hold Crafted_Hold 50$$boost Crafted_Hold Crafted_Hold 50$$boost Crafted_Hold Crafted_Hold 50"
+			Option "5x" "boost Crafted_Hold Crafted_Hold 50$$boost Crafted_Hold Crafted_Hold 50$$boost Crafted_Hold Crafted_Hold 50$$boost Crafted_Hold Crafted_Hold 50$$boost Crafted_Hold Crafted_Hold 50"
+		}
+		Menu "Immobilize (50)"
+		{
+			Option "1x" "boost Crafted_Immobilize Crafted_Immobilize 50"
+			Option "3x" "boost Crafted_Immobilize Crafted_Immobilize 50$$boost Crafted_Immobilize Crafted_Immobilize 50$$boost Crafted_Immobilize Crafted_Immobilize 50"
+			Option "5x" "boost Crafted_Immobilize Crafted_Immobilize 50$$boost Crafted_Immobilize Crafted_Immobilize 50$$boost Crafted_Immobilize Crafted_Immobilize 50$$boost Crafted_Immobilize Crafted_Immobilize 50$$boost Crafted_Immobilize Crafted_Immobilize 50"
+		}
+		Menu "Intangibility (50)"
+		{
+			Option "1x" "boost Crafted_Intangibility Crafted_Intangibility 50"
+			Option "3x" "boost Crafted_Intangibility Crafted_Intangibility 50$$boost Crafted_Intangibility Crafted_Intangibility 50$$boost Crafted_Intangibility Crafted_Intangibility 50"
+			Option "5x" "boost Crafted_Intangibility Crafted_Intangibility 50$$boost Crafted_Intangibility Crafted_Intangibility 50$$boost Crafted_Intangibility Crafted_Intangibility 50$$boost Crafted_Intangibility Crafted_Intangibility 50$$boost Crafted_Intangibility Crafted_Intangibility 50"
+		}
+		Menu "Interrupt (50)"
+		{
+			Option "1x" "boost Crafted_Interrupt Crafted_Interrupt 50"
+			Option "3x" "boost Crafted_Interrupt Crafted_Interrupt 50$$boost Crafted_Interrupt Crafted_Interrupt 50$$boost Crafted_Interrupt Crafted_Interrupt 50"
+			Option "5x" "boost Crafted_Interrupt Crafted_Interrupt 50$$boost Crafted_Interrupt Crafted_Interrupt 50$$boost Crafted_Interrupt Crafted_Interrupt 50$$boost Crafted_Interrupt Crafted_Interrupt 50$$boost Crafted_Interrupt Crafted_Interrupt 50"
+		}
+		Menu "Jump (50)"
+		{
+			Option "1x" "boost Crafted_Jump Crafted_Jump 50"
+			Option "3x" "boost Crafted_Jump Crafted_Jump 50$$boost Crafted_Jump Crafted_Jump 50$$boost Crafted_Jump Crafted_Jump 50"
+			Option "5x" "boost Crafted_Jump Crafted_Jump 50$$boost Crafted_Jump Crafted_Jump 50$$boost Crafted_Jump Crafted_Jump 50$$boost Crafted_Jump Crafted_Jump 50$$boost Crafted_Jump Crafted_Jump 50"
+		}
+		Menu "Knockback (50)"
+		{
+			Option "1x" "boost Crafted_Knockback Crafted_Knockback 50"
+			Option "3x" "boost Crafted_Knockback Crafted_Knockback 50$$boost Crafted_Knockback Crafted_Knockback 50$$boost Crafted_Knockback Crafted_Knockback 50"
+			Option "5x" "boost Crafted_Knockback Crafted_Knockback 50$$boost Crafted_Knockback Crafted_Knockback 50$$boost Crafted_Knockback Crafted_Knockback 50$$boost Crafted_Knockback Crafted_Knockback 50$$boost Crafted_Knockback Crafted_Knockback 50"
+		}
+		Menu "Range (50)"
+		{
+			Option "1x" "boost Crafted_Range Crafted_Range 50"
+			Option "3x" "boost Crafted_Range Crafted_Range 50$$boost Crafted_Range Crafted_Range 50$$boost Crafted_Range Crafted_Range 50"
+			Option "5x" "boost Crafted_Range Crafted_Range 50$$boost Crafted_Range Crafted_Range 50$$boost Crafted_Range Crafted_Range 50$$boost Crafted_Range Crafted_Range 50$$boost Crafted_Range Crafted_Range 50"
+		}
+		Menu "Recharge Reduction (50)"
+		{
+			Option "1x" "boost Crafted_Recharge Crafted_Recharge 50"
+			Option "3x" "boost Crafted_Recharge Crafted_Recharge 50$$boost Crafted_Recharge Crafted_Recharge 50$$boost Crafted_Recharge Crafted_Recharge 50"
+			Option "5x" "boost Crafted_Recharge Crafted_Recharge 50$$boost Crafted_Recharge Crafted_Recharge 50$$boost Crafted_Recharge Crafted_Recharge 50$$boost Crafted_Recharge Crafted_Recharge 50$$boost Crafted_Recharge Crafted_Recharge 50"
+		}
+		Menu "Resist Damage (50)"
+		{
+			Option "1x" "boost Crafted_Res_Damage Crafted_Res_Damage 50"
+			Option "3x" "boost Crafted_Res_Damage Crafted_Res_Damage 50$$boost Crafted_Res_Damage Crafted_Res_Damage 50$$boost Crafted_Res_Damage Crafted_Res_Damage 50"
+			Option "5x" "boost Crafted_Res_Damage Crafted_Res_Damage 50$$boost Crafted_Res_Damage Crafted_Res_Damage 50$$boost Crafted_Res_Damage Crafted_Res_Damage 50$$boost Crafted_Res_Damage Crafted_Res_Damage 50$$boost Crafted_Res_Damage Crafted_Res_Damage 50"
+		}
+		Menu "Run (50)"
+		{
+			Option "1x" "boost Crafted_Run Crafted_Run 50"
+			Option "3x" "boost Crafted_Run Crafted_Run 50$$boost Crafted_Run Crafted_Run 50$$boost Crafted_Run Crafted_Run 50"
+			Option "5x" "boost Crafted_Run Crafted_Run 50$$boost Crafted_Run Crafted_Run 50$$boost Crafted_Run Crafted_Run 50$$boost Crafted_Run Crafted_Run 50$$boost Crafted_Run Crafted_Run 50"
+		}
+		Menu "Sleep (50)"
+		{
+			Option "1x" "boost Crafted_Sleep Crafted_Sleep 50"
+			Option "3x" "boost Crafted_Sleep Crafted_Sleep 50$$boost Crafted_Sleep Crafted_Sleep 50$$boost Crafted_Sleep Crafted_Sleep 50"
+			Option "5x" "boost Crafted_Sleep Crafted_Sleep 50$$boost Crafted_Sleep Crafted_Sleep 50$$boost Crafted_Sleep Crafted_Sleep 50$$boost Crafted_Sleep Crafted_Sleep 50$$boost Crafted_Sleep Crafted_Sleep 50"
+		}
+		Menu "Snare (Slow) (50)"
+		{
+			Option "1x" "boost Crafted_Snare Crafted_Snare 50"
+			Option "3x" "boost Crafted_Snare Crafted_Snare 50$$boost Crafted_Snare Crafted_Snare 50$$boost Crafted_Snare Crafted_Snare 50"
+			Option "5x" "boost Crafted_Snare Crafted_Snare 50$$boost Crafted_Snare Crafted_Snare 50$$boost Crafted_Snare Crafted_Snare 50$$boost Crafted_Snare Crafted_Snare 50$$boost Crafted_Snare Crafted_Snare 50"
+		}
+		Menu "Stun (50)"
+		{
+			Option "1x" "boost Crafted_Stun Crafted_Stun 50"
+			Option "3x" "boost Crafted_Stun Crafted_Stun 50$$boost Crafted_Stun Crafted_Stun 50$$boost Crafted_Stun Crafted_Stun 50"
+			Option "5x" "boost Crafted_Stun Crafted_Stun 50$$boost Crafted_Stun Crafted_Stun 50$$boost Crafted_Stun Crafted_Stun 50$$boost Crafted_Stun Crafted_Stun 50$$boost Crafted_Stun Crafted_Stun 50"
+		}
+		Menu "Taunt (50)"
+		{
+			Option "1x" "boost Crafted_Taunt Crafted_Taunt 50"
+			Option "3x" "boost Crafted_Taunt Crafted_Taunt 50$$boost Crafted_Taunt Crafted_Taunt 50$$boost Crafted_Taunt Crafted_Taunt 50"
+			Option "5x" "boost Crafted_Taunt Crafted_Taunt 50$$boost Crafted_Taunt Crafted_Taunt 50$$boost Crafted_Taunt Crafted_Taunt 50$$boost Crafted_Taunt Crafted_Taunt 50$$boost Crafted_Taunt Crafted_Taunt 50"
+		}
+		Menu "To Hit (50)"
+		{
+			Option "1x" "boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50"
+			Option "3x" "boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50$$boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50$$boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50"
+			Option "5x" "boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50$$boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50$$boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50$$boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50$$boost Crafted_ToHit_Buff Crafted_ToHit_Buff 50"
+		}
+		Menu "To Hit Debuff (50)"
+		{
+			Option "1x" "boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50"
+			Option "3x" "boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50$$boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50$$boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50"
+			Option "5x" "boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50$$boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50$$boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50$$boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50$$boost Crafted_ToHit_DeBuff Crafted_ToHit_DeBuff 50"
+		}
+	}
+	Menu "Hamidon Origin (53)"
+	{
+		Option "Endoplasm Exposure (Acc/Mez)" "boost Hamidon_Accuracy_Mez Hamidon_Accuracy_Mez 53"
+		Option "Cytoskeleton Exposure (End/ToHit/Def)" "boost Hamidon_Buff_Endurance_Discount Hamidon_Buff_Endurance_Discount 53"
+		Option "Membrane Exposure (Rech/ToHit/Def)" "boost Hamidon_Buff_Recharge Hamidon_Buff_Recharge 53"
+		Option "Nucleolus Exposure (Acc/Dam)" "boost Hamidon_Damage_Accuracy Hamidon_Damage_Accuracy 53"
+		Option "Peroxisome Exposure (Dam/Mez)" "boost Hamidon_Damage_Mez Hamidon_Damage_Mez 53"
+		Option "Centriole Exposure (Dam/Range)" "boost Hamidon_Damage_Range Hamidon_Damage_Range 53"
+		Option "Lysosome Exposure (Acc/Def Debuff/ToHit Debuff)" "boost Hamidon_Debuff_Accuracy Hamidon_Debuff_Accuracy 53"
+		Option "Enzyme Exposure (End/Def Debuff/ToHit Debuff)" "boost Hamidon_Debuff_Endurance_Discount Hamidon_Debuff_Endurance_Discount 53"
+		Option "Golgi Exposure (End/Heal/Absorb)" "boost Hamidon_Heal_Endurance_Discount Hamidon_Heal_Endurance_Discount 53"
+		Option "Ribosome Exposure (End/Res)" "boost Hamidon_Res_Damage_Endurance_Discount Hamidon_Res_Damage_Endurance_Discount 53"
+		Option "Microfilament Exposure (End/Fly/Jump/Run)" "boost Hamidon_Travel_Endurance_Discount Hamidon_Travel_Endurance_Discount 53"
+	}
+	Divider
+	Title "Misc"
+	Option "Grant Oroboro Portal" "badge_grant ouroborosenabled"
+	Divider
+	Title "SKPP Test Build Menu"
+	Title "v0.4"
+}

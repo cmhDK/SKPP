@@ -1,0 +1,56 @@
+Toggles = X sec on X sec off
+
+
+Arachnos: 	Mind Link (Toggles, +Acc, Res Conf, +Perception)
+		Single Target Heal
+
+Banished: 	AoE Attack
+
+Carnival: 	Single Target Heal
+
+Cimeroran: 	PBAoE Heal
+
+Clockwork: 	5-7% Def Buff
+
+Demons: 	Acc AoE Heal
+
+IDF: 		Single Target Heal
+		Shield Generator (Toggles, 5% Def All, .7 Res Immob & Disorient)
+
+Knives: 	Rallying cry (30s Dmg, ToHit, Status Res/prot All)
+		Guardianship (1m 15s +End, +Regen, +Recharge, Res Slow) 4m 20s Recharge
+
+Longbow: 	Single Target Heal
+		(KB Attacks)
+
+Nemesis: 	AoE Heal
+		(KB Attacks)
+
+Phantoms 	Single Target Heal
+	 	Adrenalin Boost (1m 15s +End, +Regen, +Recharge, +Res Slow) 4m 20s Recharge
+
+Polar: 		Single target heal
+		Assault (Toggles)
+
+Rikti: 		PBAoE Heal
+		Accelerate Metabolism (1m +Speed, +Recharge, +Recovery, +Dmg, +Res Effects) 4m Recharge
+
+Robotic: 	Shield Generator (Toggles, 5% Def All, .7 Res Immob & Disorient)
+
+Rularuu: 	Crystal Vigor (30s PBAoE 50% Dmg Buff) 4m recharge
+	 	Single target heal
+
+Seers: 		Fortitude (30s 3% ToHit, 3% Def All, 10% Dmg) 30s Recharge
+
+Storm: 		PBAoE KB
+
+Talons: 	Soothing Song PBAoE (20s 5% Def All, 10% Res All, +Healing) 45s Recharge
+
+Tsoo: 		PBAoE KB + TPs around
+		Single Target Heal
+
+Vanguard:	Assault (Toggles)
+		AoE Heal
+
+Warworks:	Shield Generator (Toggles, 5% Def All, .7 Res Immob & Disorient)
+
