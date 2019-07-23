@@ -6,7 +6,7 @@ Example: C:\City of Heroes\data\texts\English\menus\
 create any folder that is missing
 
 in-game, paste the following into the chat
-/macro_image "InherentBase_Book" "SKKP Cheat Menu" "popmenu cheat"
+/macro_image "InherentBase_Book" "SKKP Cheat Menu" "popmenu cheats"
 
 Happy Testing!
 
